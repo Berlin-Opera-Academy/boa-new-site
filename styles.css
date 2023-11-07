@@ -1,71 +1,54 @@
-html {
-  background-color: #f5f1e9;
-  color: #201a10;
-  font-size:100%;
-  max-width: 100%;
-}
-
 body {
-  background-color: #f5f1e9;
-  font-family: 'Playfair Display', serif;
-  font-family: 'Montserrat', sans-serif;  
-  color: #8f9194;
-  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-/*== font for the "operas" page titles: eg Alcina  ==*/
-h1 {
-  font-weight: 400;
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;  
-  color: #b8995f;
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
-h2 {
-  font-weight: 400;
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;   
-  color: #b8995f;
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; /* Place content above the video */
 }
 
-h3 {
-  font-weight: 400;
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;   
-  color: #b8995f;
+.header-content h2 {
+  font-family: 'Euclid Flex', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: 90px;
+  color: white;
+  margin-bottom: 10px;
 }
 
-h4 {
-  font-weight: 400;
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;   
-  color: #b8995f;
+.additional-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0;
+  margin-bottom: 20px;
 }
 
-h5 {
-  font-weight: 400;
-  font-family: 'Playfair Display', serif;
-  text-transform: unset;  
-  color: #312919;
+.apply-button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
 }
-
-h6 {
-  font-weight: 400;
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;   
-  color: #b8995f;
-;
-}
-
-p {
-  font-family: 'Playfair Display', serif;
-  font-family: 'Montserrat', sans-serif; 
-  margin-top: 0.5rem ;
-  margin-bottom: 2rem ;
- 
-}
-
-pre {
-  color: #f5f1e9;
-}
-
