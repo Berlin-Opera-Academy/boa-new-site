@@ -175,28 +175,6 @@ body {
     text-decoration: none;
 }
 
-/*<!-- Singers Page CSS -->*/
-.singer-panel {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  display: flex; /* Add this line */
-  align-items: center; /* Add this line */
-  justify-content: center; /* Add this line */
-}
-
-.inline-video-container {
-  position: relative;
-  min-height: 35vh;
-  width: 60%;
-  margin: 0;
-  padding: 0;
-}
-
 /*<!-- Who We Are Section -->*/
 
 .who-we-are-panel {
@@ -230,4 +208,63 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<!-- Singers Page CSS -->*/
+.singer-panel {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex; /* Add this line */
+  align-items: center; /* Add this line */
+  justify-content: center; /* Add this line */
+}
+
+.inline-video-container {
+  position: relative;
+  min-height: 35vh;
+  width: 60%;
+  margin: 0;
+  padding: 0;
 }
