@@ -8,6 +8,63 @@ body {
   overflow: auto;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger-menu div {
+  width: 2rem;
+  height: 0.25rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background: #1F3D3D;
+  height: 100vh;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 9;
+}
+
+.nav-menu a {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+/* Header + video */
+
 .header-content {
   position: relative;
   width: 100%;
@@ -68,6 +125,8 @@ body {
   padding: 0;
 }
 
+/*<!-- Panel Section -->*/
+
 .panel {
   background-color: black;
   color: white;
@@ -76,10 +135,14 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
-  display: flex; /* Add this line */
-  flex-direction: column; /* Add this line */
-  align-items: center; /* Add this line */
-  justify-content: center; /* Add this line */
+  box-sizing: border-box; /* Add this line */
+}
+
+.panel-content { /* Add this class */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Styles for screens larger than 1200px */
@@ -138,7 +201,7 @@ body {
 /*<!-- Path Selection Section -->*/
 
 .path-panel {
-  background-color: #2F4F4F; /* Dark slate grey */
+  background-color: #1F3D3D; /* Darker slate grey */
   color: white;
   padding: 20px;
   text-align: center;
@@ -175,33 +238,59 @@ body {
     text-decoration: none;
 }
 
-/*<!-- Who We Are Section -->*/
-
+/* Who We Are Section */
 .who-we-are-panel {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1.618fr; /* Golden ratio */
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black; /* Preserve original color */
+  color: white; /* Preserve original color */
 }
 
-.who-we-are-panel h2 {
-  font-weight: bold;
+.who-we-are-panel .text-container {
+  flex: 0 0 calc(38.2% - 20px); /* Subtract the total horizontal margin */
+  margin: 10px;
+  box-sizing: border-box; /* Add this line */
+  color: white; /* Preserve original color */
 }
 
-.who-we-are-panel img {
+.who-we-are-panel .image-container {
+  flex: 0 0 calc(61.8% - 20px); /* Subtract the total horizontal margin */
+  margin: 10px;
+  box-sizing: border-box; /* Add this line */
+}
+
+.who-we-are-panel .image-container img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-/*<!-- Join Us Section -->*/
+/* Responsive Design */
+@media screen and (max-width: 768px) { /* Adjust breakpoint as needed */
+  .who-we-are-panel {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .who-we-are-panel .text-container,
+  .who-we-are-panel .image-container {
+      margin: 0;
+      width: 100%;
+  }
+}
+
+/* Join Us Section */
 
 .join-us-panel {
-  background-color: slategray;
+  background-color: #1F3D3D; /* Darker slate grey */
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+.join-us-panel a {
+  color: white;
+  text-decoration: none;
 }
 
 .category-grid {
@@ -210,28 +299,48 @@ body {
   gap: 20px;
 }
 
-/*<!-- Footer Section -->*/
-
+/* Footer Section */
 .footer-panel {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Change this from center to stretch */
+  min-height: 30vh;
+  padding: 10%; /* Add padding around the boxes */
+  box-sizing: border-box;
 }
 
-.info-container {
+.footer-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.info-container,
+.right-container {
   background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  box-sizing: border-box;
+  flex: 1; /* Add this line */
+  max-width: calc(50% - 20%); /* Adjust this value to account for padding and gap */
 }
 
-.info-container img {
+.info-container img,
+.right-container img {
   width: 100%;
   height: auto;
 }
 
-.info-container a {
+.info-container a,
+.right-container a {
   color: white;
   text-decoration: none;
 }
@@ -245,12 +354,6 @@ body {
   width: 24px;
   height: 24px;
 }
-
-.image-container img {
-  width: 100%;
-  height: auto;
-}
-
 
 
 

@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Video Section -->
+
+    <!-- Hamburger Menu -->
+<div class="hamburger-menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  
+  <!-- Navigation Menu -->
+  <nav class="nav-menu">
+    <a href="#">Home</a>
+    <a href="singers-summer.html">SINGERS // SUMMER</a>
+    <a href="singers-full-time.html">SINGERS // FULL-TIME</a>
+    <a href="orchestra.html">ORCHESTRA</a>
+    <a href="apprentices.html">APPRENTICES</a>
+  </nav>
+
+
+<!-- Background Video Section -->
     <section>
         <div class="video-container">
             <video class="background-video" autoplay loop muted>
@@ -30,10 +48,12 @@
 <!-- Panel Section -->
 <section>
     <div class="panel">
-        <p>
-            Berlin Opera Academy is the premier European opera training program providing practical professional instruction to emerging artists in the most operatically important city in the world.
-        </p>
-        <button class="apply-button">Apply Now</button> <!-- Add this line -->
+        <div class="panel-content"> <!-- Add this div -->
+            <p>
+                Berlin Opera Academy is the premier European opera training program providing practical professional instruction to emerging artists in the most operatically important city in the world.
+            </p>
+            <button class="apply-button">Apply Now</button>
+        </div>
     </div> 
 </section>
 <!-- Path Selection Section -->
@@ -94,6 +114,7 @@
 <!-- Footer Section -->
 <footer>
     <div class="footer-panel">
+        <img class="footer-image" src="media/hands-berlin-opera-academy-singers-learn-the-skills-you-need-to-succeed-in-the-21st-century-of-opera-at-boa.jpg" alt="Footer Image">
         <div class="info-container">
             <img src="media/logo.jpg" alt="BOA Logo">
             <a href="mailto:info@berlinoperaacademy.com">info@berlinoperaacademy.com</a>
@@ -105,15 +126,16 @@
             </div>
             <a href="impressum.html">Impressum</a>
             <a href="employment.html">Employment</a>
+        </div>
+        <div class="right-container"> <!-- Add this div for the right box -->
             <a href="faqs.html">FAQs</a>
             <a href="donors.html">Donors</a>
             <a href="saluzzo-opera-academy.html">Saluzzo Opera Academy</a>
-        </div>
-        <div class="image-container">
-            <img src="media/footer-image.jpg" alt="Footer Image">
         </div>
     </div> 
 </footer>
 
 
+<script src="main.js"></script>
+</body>
 </html>
