@@ -210,7 +210,46 @@ body {
   gap: 20px;
 }
 
+/*<!-- Footer Section -->*/
 
+.footer-panel {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.info-container {
+  background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.info-container img {
+  width: 100%;
+  height: auto;
+}
+
+.info-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
 
 
 
