@@ -10,6 +10,9 @@ body {
 
 /* Hamburger Menu */
 .hamburger-menu {
+  position: fixed; /* Add this line */
+  top: 20px; /* Add this line */
+  right: 20px; /* Add this line */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
