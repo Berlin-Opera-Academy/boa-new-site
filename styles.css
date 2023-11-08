@@ -87,3 +87,23 @@ body {
       font-size: 14px;
   }
 }
+
+.content {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Euclid Flex', sans-serif;
+  color: white;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1em;
+  font-weight: light;
+}
