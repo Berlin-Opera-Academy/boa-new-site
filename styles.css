@@ -170,3 +170,38 @@ body {
     text-align: center;
     text-decoration: none;
 }
+
+/*<!-- Who We Are Section -->*/
+
+.who-we-are-panel {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.618fr; /* Golden ratio */
+  gap: 20px;
+}
+
+.who-we-are-panel h2 {
+  font-weight: bold;
+}
+
+.who-we-are-panel img {
+  width: 100%;
+  height: auto;
+}
+
+/*<!-- Join Us Section -->*/
+
+.join-us-panel {
+  background-color: slategray;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
