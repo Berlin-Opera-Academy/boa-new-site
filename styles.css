@@ -6,18 +6,35 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
+  color: var(--secondary-color);
+  font-family: 'Roboto Thin', sans-serif;
+}
+
+@font-face {
+  font-family: 'Euclid Flex';
+  src: url('path-to-your-font/EuclidFlex-Regular.woff2') format('woff2'),
+       url('path-to-your-font/EuclidFlex-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: rgba(27, 31, 36, 0.8);
+  --secondary-color: white;
+  --primary-font-size: 1em;
+  --secondary-font-size: 2em;
 }
 
 /* Hamburger Menu */
 .hamburger-menu {
-  position: fixed; /* Add this line */
-  top: 20px; /* Add this line */
-  right: 20px; /* Add this line */
+  position: fixed;
+  top: 1.25em; /* 20px */
+  right: 1.25em; /* 20px */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
+  width: 2em; /* 32px */
+  height: 2em; /* 32px */
   background: transparent;
   border: none;
   cursor: pointer;
@@ -27,9 +44,9 @@ body {
 
 .hamburger-menu div {
   width: 2rem;
-  height: 0.25rem;
-  background: white;
-  border-radius: 10px;
+  height: 0.015625em;
+  background: var(--secondary-color);
+  border-radius: 0.625em;
   transition: all 0.3s linear;
   position: relative;
   transform-origin: 1px;
@@ -40,26 +57,26 @@ body {
   display: none;
   flex-direction: column;
   justify-content: center;
-  background: rgba(31, 61, 61, 0.8); /* Semi-transparent darker slate grey */
-  height: auto; /* Adjust this to auto */
+  background: var(--primary-color);
+  height: auto;
   text-align: left;
   overflow-y: auto;
-  padding: 1rem; /* Adjust this value to add some space around the text */
-  position: fixed; /* Change from absolute to fixed */
-  top: 60px; /* Position it below the hamburger icon */
-  right: 20px; /* Position it on the right-hand side */
+  padding: var(--primary-font-size);
+  position: fixed;
+  top: 3.75em;
+  right: 1.25em;
   transition: transform 0.3s ease-in-out;
   z-index: 9;
-  width: auto; /* Remove fixed width */
+  width: auto;
 }
 
 .nav-menu a {
-  font-size: 1rem; /* Adjust this to change the text size */
+  font-size: var(--primary-font-size);
   text-transform: uppercase;
-  padding: 0.5rem 0; /* Adjust this to control the space between the lines of text */
+  padding: 0.03125em 0;
   font-weight: bold;
-  letter-spacing: 0.5rem;
-  color: white;
+  letter-spacing: 0.03125em;
+  color: var(--secondary-color);
   text-decoration: none;
   transition: color 0.3s linear;
 }
@@ -84,30 +101,30 @@ body {
 
 .header-content h2 {
   font-family: 'Euclid Flex', sans-serif;
-  font-size: 45px;
+  font-size: 2.8125em;
   font-weight: 500;
-  letter-spacing: 90px;
-  color: white;
-  margin-bottom: 10px;
+  letter-spacing: 5.625em;
+  color: var(--secondary-color);
+  margin-bottom: 0.625em;
 }
 
 .additional-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 23px;
+  font-size: 1.4375em;
   font-weight: 300;
-  color: white;
+  color: var(--secondary-color);
   letter-spacing: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 .apply-button {
   font-family: 'Open Sans', sans-serif;
-  font-size: 21px;
+  font-size: 1.3125em;
   font-weight: 300;
   background: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 10px 20px;
+  color: var(--secondary-color);
+  border: 0.0625em solid var(--secondary-color);
+  padding: 0.625em 2.375em;
   cursor: pointer;
 }
 
@@ -134,99 +151,97 @@ body {
 
 .panel {
   background-color: black;
-  color: white;
-  padding: 20px;
+  color: var(--secondary-color);
+  padding: 1.25em;
   width: 100%;
   position: relative;
   z-index: 1;
   text-align: center;
-  box-sizing: border-box; /* Add this line */
+  box-sizing: border-box;
 }
 
-.panel-content { /* Add this class */
+.panel-content {
+  /* Sets the display to flex and the direction to column */
   display: flex;
   flex-direction: column;
+  /* Sets the font family to 'Euclid Flex', sans-serif */
+  font-family: 'Euclid Flex', sans-serif;
+  /* Aligns items to the center and justifies content to the center */
   align-items: center;
   justify-content: center;
+  /* Sets the font size to 1.25em and the line height to 1.5 */
+  font-size: 1.25em;
+  line-height: 1.5;
+  /* Sets the font weight to 100 */
+  font-weight: 100;
+  /* Sets the margin to 0 on the top and bottom and 0.625em on the left and right */
+  margin: 1em 2em;
+  /* Sets the padding to 0.25em on the top and bottom and 0.625em on the left and right */
+  padding: 0.25em 2em;
 }
 
-/* Styles for screens larger than 1200px */
-@media screen and (min-width: 1200px) {
-  .panel {
-      font-size: 24px;
-  }
 
-  .apply-button {
-      font-size: 22px;
-  }
-}
-
-/* Styles for screens between 600px and 1200px */
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-  .panel {
-      font-size: 20px;
-  }
-
-  .apply-button {
-      font-size: 18px;
-  }
-}
-
-/* Styles for screens smaller than 600px */
-@media screen and (max-width: 600px) {
-  .panel {
-      font-size: 16px;
-  }
-
-  .apply-button {
-      font-size: 14px;
-  }
-}
 
 .content {
   text-align: left;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 38.2%;
+  left: 38.2%;
   transform: translate(-50%, -50%);
   font-family: 'Euclid Flex', sans-serif;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .title {
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 4em;
 }
 
 .subtitle {
-  font-size: 1em;
-  font-weight: light;
+  font-size: var(--secondary-font-size);
+  font-family: 'Roboto Thin', sans-serif;
+  font-weight: 100;
+  margin-bottom: var(--secondary-font-size);
 }
 
 /*<!-- Path Selection Section -->*/
 
 .path-panel {
-  background-color: #1F3D3D; /* Darker slate grey */
-  color: white;
-  padding: 20px;
+  background-color: rgba(27, 31, 36, 1);
+  color: var(--secondary-color);
+  padding: 1.25em;
   text-align: center;
+  font-family: 'Roboto Thin', sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
 }
 
 .path-panel h2 {
   text-transform: uppercase;
+  font-size: var(--secondary-font-size); /* Adjust this to change the text size */
+  font-family: 'Roboto Thin', sans-serif; /* Change font family to Roboto Thin */
+  font-weight: 100; /* Set font weight to minimum */
+}
+
+.image-grid::before,
+.image-grid::after {
+  content: "";
+  width: 1.25em; /* Adjust this to change the left and right margins */
 }
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr));
+  gap: 1.25em;
   justify-items: center;
   align-items: center;
+  margin: 0 -1.25em; /* Adjust this to change the left and right margins */
 }
 
 .image-grid img {
   width: 100%;
-  height: auto;
+  height: 200%; /* Double the height */
+  object-fit: cover; /* Cover the entire content box */
+  object-position: center; /* Center the image */
 }
 
 .image-container {
@@ -238,7 +253,7 @@ body {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
     text-decoration: none;
 }
@@ -248,20 +263,23 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: black; /* Preserve original color */
-  color: white; /* Preserve original color */
+  color: var(--secondary-color); /* Preserve original color */
+  font-family: 'Roboto Thin', sans-serif; /* Change font family to Roboto Thin */
 }
 
 .who-we-are-panel .text-container {
-  flex: 0 0 calc(38.2% - 20px); /* Subtract the total horizontal margin */
-  margin: 10px;
-  box-sizing: border-box; /* Add this line */
-  color: white; /* Preserve original color */
+  flex: 0 0 calc(38.2% - 1.25em); /* Subtract the total horizontal margin */
+  margin: 0.625em;
+  box-sizing: border-box; 
+  color: var(--secondary-color); /* Preserve original color */
+  padding-left: 1em; /* Add this line to adjust the indent */
+  font-size: 1.5em;
 }
 
 .who-we-are-panel .image-container {
-  flex: 0 0 calc(61.8% - 20px); /* Subtract the total horizontal margin */
-  margin: 10px;
-  box-sizing: border-box; /* Add this line */
+  flex: 0 0 calc(61.8% - 1.25em); /* Subtract the total horizontal margin */
+  margin: 0.625em;
+  box-sizing: border-box;
 }
 
 .who-we-are-panel .image-container img {
@@ -270,38 +288,28 @@ body {
   object-fit: cover;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) { /* Adjust breakpoint as needed */
-  .who-we-are-panel {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .who-we-are-panel .text-container,
-  .who-we-are-panel .image-container {
-      margin: 0;
-      width: 100%;
-  }
-}
-
 /* Join Us Section */
 
+/* This styles the main container of the Join Us section. */
 .join-us-panel {
-  background-color: #1F3D3D; /* Darker slate grey */
-  color: white;
-  padding: 20px;
-  text-align: center;
+  background-color: rgba(27, 31, 36, 1); /* Sets the background color to a darker slate grey. */
+  color: var(--secondary-color); /* Sets the text color to the secondary color defined elsewhere in your CSS. */
+  padding: 1.25em 1.25em 2em; /* Adds padding around the content inside the Join Us section. */
+  text-align: center; /* Centers the text horizontally. */
+  font-size: 1.5em; /* Sets the font size to 1.5 times the base font size. */
 }
 
+/* This styles the links in the Join Us section. */
 .join-us-panel a {
-  color: white;
-  text-decoration: none;
+  color: var(--secondary-color); /* Sets the link color to the secondary color defined elsewhere in your CSS. */
+  text-decoration: none; /* Removes the underline from the links. */
 }
 
+/* This styles the grid that contains the categories in the Join Us section. */
 .category-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: grid; /* Makes the container a grid container. */
+  grid-template-columns: repeat(4, 1fr); /* Creates a grid with 4 equal-width columns. */
+  gap: 1.25em; /* Sets the gap between grid items to 1.25em. */
 }
 
 /* Footer Section */
@@ -327,12 +335,12 @@ body {
 
 .info-container,
 .right-container {
-  background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
-  padding: 20px;
+  background-color: rgba(27, 31, 36, 0.5); /* Semi-transparent gray */
+  padding: 1.25em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 0.625em;
   box-sizing: border-box;
   flex: 1; /* Add this line */
   max-width: calc(50% - 20%); /* Adjust this value to account for padding and gap */
@@ -346,19 +354,53 @@ body {
 
 .info-container a,
 .right-container a {
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 .social-media-icons {
   display: flex;
-  gap: 10px;
+  gap: 0.625em;
 }
 
 .social-media-icons img {
-  width: 24px;
-  height: 24px;
+  width: 1.5em;
+  height: 1.5em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Singers Page CSS */
 .singer-image-container {
@@ -367,7 +409,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-top: 150px;
+  margin-top: 9.375em;
 }
 
 .singer-background-image {
@@ -383,7 +425,7 @@ body {
 
 .singer-image-panel {
   background-color: black;
-  color: white;
+  color: var(--secondary-color);
   width: 100%;
   height: 15%;
   position: absolute;
@@ -398,10 +440,10 @@ body {
   font-family: 'Euclid Flex', sans-serif;
   text-transform: uppercase;
   left: 0;
-  font-size: 100px;
+  font-size: 6.25em;
   font-weight: 1000;
-  color: white;
-  margin-bottom: -20px;
+  color: var(--secondary-color);
+  margin-bottom: -1.25em;
   z-index: 2;
   position: absolute;
   bottom: 100%;
@@ -409,7 +451,7 @@ body {
 
 .singer-panel {
   background-color: black;
-  color: white;
+  color: var(--secondary-color);
   width: 100%;
   position: relative;
   z-index: 1;
@@ -422,15 +464,14 @@ body {
 .singer-season-announcement{
   font-family: 'Euclid Flex', sans-serif;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 3.75em;
   font-weight: 1000;
-  color: white;
-  margin-bottom: 20px;
+  color: var(--secondary-color);
+  margin-bottom: 1.25em;
   z-index: 3;
   position: relative;
   top: 0;
   left: 0;
-
 }
 
 .inline-video-container {
@@ -480,5 +521,52 @@ body {
 @media (min-width: 1200px) {
   .nav-menu {
     width: 20%; /* Reduce the width even more on very large screens */
+  }
+}
+
+/* Styles for screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+  .panel {
+      font-size: 24px;
+  }
+
+  .apply-button {
+      font-size: 22px;
+  }
+}
+
+/* Styles for screens between 600px and 1200px */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .panel {
+      font-size: 20px;
+  }
+
+  .apply-button {
+      font-size: 18px;
+  }
+}
+
+/* Styles for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .panel {
+      font-size: 16px;
+  }
+
+  .apply-button {
+      font-size: 14px;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) { /* Adjust breakpoint as needed */
+  .who-we-are-panel {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .who-we-are-panel .text-container,
+  .who-we-are-panel .image-container {
+      margin: 0;
+      width: 100%;
   }
 }
