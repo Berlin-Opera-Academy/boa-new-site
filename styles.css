@@ -333,16 +333,25 @@ body {
   z-index: -1;
 }
 
+/* Applies to elements with class "info-container" and "right-container" */
 .info-container,
 .right-container {
-  background-color: rgba(27, 31, 36, 0.5); /* Semi-transparent gray */
+  /* Semi-transparent gray background */
+  background-color: rgba(27, 31, 36, 0.5);
+  /* Padding around the element */
   padding: 1.25em;
+  /* Flexbox container with column direction */
   display: flex;
   flex-direction: column;
+  /* Align items to the start of the container */
   align-items: flex-start;
+  /* Spacing between child elements */
   gap: 0.625em;
+  /* Include padding and border in the element's total width and height */
   box-sizing: border-box;
-  flex: 1; /* Add this line */
+  /* Flex grow factor */
+  flex: 1;
+  /* Maximum width of the element */
   max-width: calc(50% - 20%); /* Adjust this value to account for padding and gap */
 }
 
@@ -367,7 +376,6 @@ body {
   width: 1.5em;
   height: 1.5em;
 }
-
 
 
 
