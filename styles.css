@@ -217,9 +217,9 @@ body {
 
 .path-panel h2 {
   text-transform: uppercase;
-  font-size: var(--secondary-font-size); /* Adjust this to change the text size */
-  font-family: 'Roboto Thin', sans-serif; /* Change font family to Roboto Thin */
-  font-weight: 100; /* Set font weight to minimum */
+  font-size: var(--secondary-font-size);
+  font-family: 'HK Grotesk Regular', sans-serif;
+  font-weight: 200;
 }
 
 .image-grid::before,
@@ -239,23 +239,48 @@ body {
 
 .image-grid img {
   width: 100%;
-  height: 200%; /* Double the height */
+  height: 100%; /* Double the height */
   object-fit: cover; /* Cover the entire content box */
   object-position: center; /* Center the image */
 }
 
+/* Add this to your existing .image-container class */
 .image-container {
-    position: relative;
+  position: relative;
+  display: flex; /* Add this */
+}
+
+/* Add this new class for the pseudo-element */
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  z-index: 1;
 }
 
 .image-link {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondary-color);
-    text-align: center;
-    text-decoration: none;
+  position: absolute; /* This positions the text relative to the .image-container */
+  bottom: 0; /* This aligns the text to the bottom of the .image-container */
+  left: 0; /* This aligns the text to the left of the .image-container */
+  width: 100%; /* This ensures the text spans the full width of the .image-container */
+  text-align: center; /* This centers the text within the .image-container */
+  color: white; /* Set the text color to white */
+  font-family: 'HK Grotesk ExtraLight', sans-serif;
+  font-weight: 200; /* Use the ExtraLight font */
+  z-index: 2; /* This ensures the text is above the gradient and the image */
+ margin-bottom: 20px; /* Add space at the bottom */
+}
+
+.title {
+  font-size: 20px;
+}
+
+.subtitle {
+  font-size: 14px;
 }
 
 /* Who We Are Section */
