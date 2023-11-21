@@ -193,7 +193,16 @@ body {
 }
 
 .title {
-  font-size: 4em;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.main-title {
+  font-size: 1em;
+}
+
+.composer {
+  font-weight: normal;
 }
 
 .subtitle {
@@ -201,6 +210,10 @@ body {
   font-family: 'Roboto Thin', sans-serif;
   font-weight: 100;
   margin-bottom: var(--secondary-font-size);
+}
+
+.other-titles {
+  padding-top: 1em; /* Adjust this value as needed */
 }
 
 /*<!-- Path Selection Section -->*/
@@ -457,13 +470,13 @@ body {
 }
 
 .singer-image-panel {
-  background-color: black;
+  background-color: rgb(255, 255, 255, 0);
   color: var(--secondary-color);
   width: 100%;
-  height: 15%;
+  height: 45%;
   position: absolute;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -486,10 +499,14 @@ body {
   background-color: black;
   color: var(--secondary-color);
   width: 100%;
+  padding: 50px;
+  padding-bottom: 10em;
   position: relative;
   z-index: 1;
+  margin-top: -100px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -565,6 +582,8 @@ body {
 
   .apply-button {
       font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: -20px;
   }
 }
 
@@ -602,4 +621,21 @@ body {
       margin: 0;
       width: 100%;
   }
+}
+
+.tuition-section {
+  display: flex;
+  justify-content: flex-end; /* Positions the text on the right */
+  background-color: black; /* Sets the background color to black */
+}
+
+.tuition-text {
+  text-align: left; /* Centers the text */
+  font-family: 'Euclid Flex', sans-serif; /* Sets the font to match the other texts */
+  font-size: 25px;
+  color: white; /* Sets the color to white */
+  padding: 50px; /* Adds some space inside the section */
+  width: 50%; /* Adjust this value as needed */
+  margin-left: 750px; /* Adds margin to the left */
+  margin-right: 50px;
 }
