@@ -100,10 +100,10 @@ body {
 }
 
 .header-content h2 {
-  font-family: 'Euclid Flex', sans-serif;
-  font-size: 2.8125em;
+  font-family: 'Euclid Flex-Medium', sans-serif; /* Change font to Euclid Flex-Medium */
+  font-size: 3.5em; /* Increase font size */
   font-weight: 500;
-  letter-spacing: 5.625em;
+  letter-spacing: 6em; /* Increase letter spacing */
   color: var(--secondary-color);
   margin-bottom: 0.625em;
 }
