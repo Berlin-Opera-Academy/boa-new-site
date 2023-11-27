@@ -193,12 +193,12 @@ body {
 }
 
 .title {
-  font-size: 3.5em;
+  font-size: 10em;
   font-weight: bold;
 }
 
 .main-title {
-  font-size: 1em;
+  font-size: 3em;
 }
 
 .composer {
@@ -498,9 +498,11 @@ body {
 .singer-panel {
   background-color: black;
   color: var(--secondary-color);
+  height: auto;
   width: 100%;
-  padding: 50px;
-  padding-bottom: 10em;
+  padding: 0px; /* Adjust this value as needed */
+  padding-bottom: 15em;
+  padding-top: 15em;
   position: relative;
   z-index: 1;
   margin-top: -100px;
@@ -624,18 +626,210 @@ body {
 }
 
 .tuition-section {
+  position: relative;
   display: flex;
   justify-content: flex-end; /* Positions the text on the right */
-  background-color: black; /* Sets the background color to black */
+  background-color: rgba(0, 0, 0, 0.94); /* Sets the background color to black */
 }
 
 .tuition-text {
   text-align: left; /* Centers the text */
   font-family: 'Euclid Flex', sans-serif; /* Sets the font to match the other texts */
   font-size: 25px;
+  height: 100%;
   color: white; /* Sets the color to white */
   padding: 50px; /* Adds some space inside the section */
   width: 50%; /* Adjust this value as needed */
   margin-left: 750px; /* Adds margin to the left */
   margin-right: 50px;
+}
+
+.tuition-image {
+  position: absolute; /* Positions the image absolutely within the tuition-section */
+  left: 0; /* Positions the image at the left edge of the tuition-section */
+  height: 100%;
+  width: 50%; /* Makes the image the same height as the tuition-section */
+  object-fit: cover; /* Ensures the image covers the entire space */
+}
+
+.scholarship-section {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between the items */
+    background-color: rgba(0, 0, 0, 0.94);
+}
+
+.scholarship-text {
+    font-family: 'Euclid Flex', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    width: 50%; /* Adjust this value as needed */
+}
+
+.scholarship-image {
+    height: 100%;
+    width: 50%; /* Adjust this value as needed */
+    padding-bottom: -100px;
+    object-fit: cover;
+}
+.apply-section {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between the items */
+    background-color: rgba(0, 0, 0, 0.94);
+}
+
+.apply-text {
+    font-family: 'Euclid Flex', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    margin-right: -100px;
+    width: 50%; /* Adjust this value as needed */
+    box-sizing: border-box;
+}
+
+.apply-image {
+    height: 100%;
+    width: 50%; /* Adjust this value as needed */
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.festival-section {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between the items */
+    background-color: rgba(0, 0, 0, 0.94);
+}
+
+.festival-text {
+    font-family: 'Euclid Flex', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    width: 50%; /* Adjust this value as needed */
+    box-sizing: border-box;
+}
+
+.festival-image {
+    height: 100%;
+    width: 50%; /* Adjust this value as needed */
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.BOA {
+    font-size: 40px; /* Adjust this value as needed */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    padding-top: 20px; /* Adds some space above the button */
+}
+
+.apply-festival-button {
+    font-size: 20px; /* Makes the text a bit bigger */
+    padding: 10px 140px; /* Adds some space inside the button */
+}
+
+.studio-section {
+  display: flex;
+  justify-content: space-between; /* Distributes space evenly between the items */
+  background-color: rgba(0, 0, 0, 0.94);
+  min-height: 500px; /* Adjust this value as needed */
+}
+
+
+.studio-text {
+  font-family: 'Euclid Flex', sans-serif;
+  font-size: 25px;
+  color: white;
+  padding: 50px;
+  width: 50%; /* Adjust this value as needed */
+  box-sizing: border-box;
+}
+
+.studio-image {
+  height: 100%;
+  width: 50%; /* Adjust this value as needed */
+  object-fit: cover;
+  box-sizing: border-box;
+  min-height: 500px; /* Adjust this value as needed */
+}
+
+.FOV {
+  font-size: 40px; /* Adjust this value as needed */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  padding-top: 20px; /* Adds some space above the button */
+}
+
+.apply-studio-button {
+  font-size: 20px; /* Makes the text a bit bigger */
+  padding: 10px 140px; /* Adds some space inside the button */
+}
+
+.contact-section {
+  position:relative;
+    background-image: url(media/hands-berlin-opera-academy-singers-learn-the-skills-you-need-to-succeed-in-the-21st-century-of-opera-at-boa.jpg); /* Replace with the path to your image */
+    background-size: cover; /* Makes the image cover the entire section */
+    background-position: center; /* Centers the image */
+    height: 1200px; /* Set a height for the section */
+}
+
+.join-us {
+  position: relative; /* Positions the text relative to the .contact-section */
+  text-align: center; /* Centers the text */
+  font-size: 50px; /* Adjust this value as needed */
+  padding: 20px 0; /* Adds some space above and below the text */
+  font-weight: bold
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+}
+
+.square-container {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly between the squares */
+  padding: 20px; /* Adds some space around the squares */
+  margin: auto;
+}
+
+.grey-square {
+  width: 400px; /* Adjust this value as needed */
+  height: 600px; /* Adjust this value as needed */
+  background-color: rgba(128,128,128,0.5);
+}
+
+.custom-button {
+  display: block; /* Makes the text stack vertically */
+  width: 100%; /* Makes the text fill the width of the .grey-square */
+  padding: 10px; /* Adds some space inside the text */
+  margin-bottom: 10px; /* Adds some space below the text */
+  background-color: transparent; /* Makes the background transparent */
+  border: none; /* Removes the default button border */
+  text-align: center; /* Centers the text */
+  color: white; /* Makes the text white */
+  cursor: pointer; /* Changes the cursor when hovering over the text */
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.custom-button:first-child {
+  margin-top: auto; /* Adds space above the first button */
+}
+
+.custom-button:last-child {
+  margin-bottom: auto; /* Adds space below the last button */
 }
