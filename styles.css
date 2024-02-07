@@ -18,6 +18,39 @@ body {
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'HK Grotesk-ExtraLight';
+  src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-ExtraLight.woff') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HK Grotesk-Regular';
+  src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-Regular.woff') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('assets/Montserrat/static/Montserrat-Bold.ttf') format('woff2');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Monserrat-Medium';
+  src: url{'assets/Montserrat/static/Montserrat-Medium.ttf'} format('woff2');
+  font-weight:100;
+}
+
+@font-face {
+  font-family: 'Literata-Light';
+  src: url('assets/Literata/static/Literata-Light.ttf') format('woff2');
+  font-weight:100;
+}
+
 :root {
   --primary-color: rgba(27, 31, 36, 0.8);
   --secondary-color: white;
@@ -100,8 +133,8 @@ body {
 }
 
 .header-content h2 {
-  font-family: 'Euclid Flex', sans-serif;
-  font-size: 2.8125em;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 2em;
   font-weight: 500;
   letter-spacing: 5.625em;
   color: var(--secondary-color);
@@ -109,8 +142,8 @@ body {
 }
 
 .additional-text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4375em;
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
+  font-size: .9em;
   font-weight: 300;
   color: var(--secondary-color);
   letter-spacing: 0;
@@ -451,7 +484,7 @@ body {
 /* Singers Page CSS */
 .singer-image-container {
   position: relative;
-  min-height: 65vh;
+  min-height: 40vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -489,7 +522,7 @@ body {
   font-size: 6.25em;
   font-weight: 1000;
   color: var(--secondary-color);
-  margin-bottom: -1.25em;
+  margin-bottom: -.90em;
   z-index: 2;
   position: absolute;
   bottom: 100%;
@@ -501,12 +534,15 @@ body {
   height: auto;
   width: 100%;
   padding: 0px; /* Adjust this value as needed */
-  padding-bottom: 15em;
-  padding-top: 15em;
+  padding-bottom: 5em;
+  padding-top: 2em;
   position: relative;
   z-index: 1;
   margin-top: -100px;
   text-align: center;
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
+  font-size: 2em;
+  letter-spacing: 3.5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -623,6 +659,22 @@ body {
       margin: 0;
       width: 100%;
   }
+}
+
+/*---Google Part 1 Application Form Section----*/
+
+.google-form-section {
+  background-color: black; /* make the background black */
+  display: flex; /* use flexbox to center the form */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.google-form-container iframe {
+  display: block; /* block level element */
+  margin: 0 auto; /* center horizontally */
 }
 
 .tuition-section {
