@@ -133,7 +133,7 @@ body {
 }
 
 .header-content h2 {
-  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
   font-size: 2em;
   font-weight: 500;
   letter-spacing: 5.625em;
@@ -197,8 +197,7 @@ body {
   /* Sets the display to flex and the direction to column */
   display: flex;
   flex-direction: column;
-  /* Sets the font family to 'Euclid Flex', sans-serif */
-  font-family: 'Euclid Flex', sans-serif;
+  font-family: 'HK Grotesk-Extra Light', sans-serif;
   /* Aligns items to the center and justifies content to the center */
   align-items: center;
   justify-content: center;
@@ -221,7 +220,7 @@ body {
   top: 38.2%;
   left: 38.2%;
   transform: translate(-50%, -50%);
-  font-family: 'Euclid Flex', sans-serif;
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
   color: var(--secondary-color);
 }
 
@@ -481,7 +480,10 @@ body {
 
 
 
-/* Singers Page CSS */
+/* Singers Page CSS------------------------------- */
+
+/* Header Section---------------- */
+
 .singer-image-container {
   position: relative;
   min-height: 40vh;
@@ -528,6 +530,7 @@ body {
   bottom: 100%;
 }
 
+
 .singer-panel {
   background-color: black;
   color: var(--secondary-color);
@@ -549,8 +552,10 @@ body {
   justify-content: center;
 }
 
+/* Season Announement Section---------------- */
+
 .singer-season-announcement{
-  font-family: 'Euclid Flex', sans-serif;
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
   text-transform: uppercase;
   font-size: 3.75em;
   font-weight: 1000;
@@ -561,6 +566,8 @@ body {
   top: 0;
   left: 0;
 }
+
+/* Video Section---------------- */
 
 .inline-video-container {
   position: relative;
@@ -646,6 +653,19 @@ body {
       font-size: 14px;
   }
 }
+/* Apply Section---------------- */
+
+.apply-section h2 {
+  margin: 0 0 35px 0;
+  text-transform: uppercase;
+  font-size: var(--secondary-font-size);
+  font-family: 'HK Grotesk-Regular', sans-serif;
+  font-weight: 300;
+}
+
+.subheader-text {
+  font-family: 'Literata-Light', sans-serif;
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) { /* Adjust breakpoint as needed */
@@ -686,7 +706,7 @@ body {
 
 .tuition-text {
   text-align: left; /* Centers the text */
-  font-family: 'Euclid Flex', sans-serif; /* Sets the font to match the other texts */
+  font-family: 'HK Grotesk-ExtraLight', sans-serif; /* Sets the font to match the other texts */
   font-size: 25px;
   height: 100%;
   color: white; /* Sets the color to white */
@@ -711,7 +731,7 @@ body {
 }
 
 .scholarship-text {
-    font-family: 'Euclid Flex', sans-serif;
+    font-family: 'HK Grotesk-ExtraLight', sans-serif;
     font-size: 25px;
     color: white;
     padding: 50px;
@@ -731,7 +751,7 @@ body {
 }
 
 .apply-text {
-    font-family: 'Euclid Flex', sans-serif;
+    font-family: 'HK Grotesk-ExtraLight', sans-serif;
     font-size: 25px;
     color: white;
     padding: 50px;
@@ -754,7 +774,7 @@ body {
 }
 
 .festival-text {
-    font-family: 'Euclid Flex', sans-serif;
+    font-family: 'HK Grotesk-ExtraLight', sans-serif;
     font-size: 25px;
     color: white;
     padding: 50px;
@@ -793,7 +813,7 @@ body {
 
 
 .studio-text {
-  font-family: 'Euclid Flex', sans-serif;
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
   font-size: 25px;
   color: white;
   padding: 50px;
