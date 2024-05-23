@@ -41,8 +41,8 @@ body {
 
 @font-face {
   font-family: 'Monserrat-Medium';
-  src: url{'assets/Montserrat/static/Montserrat-Medium.ttf'} format('woff2');
-  font-weight:100;
+  src: url('assets/Montserrat/static/Montserrat-Medium.ttf') format('woff2');
+  font-weight: 100;
 }
 
 @font-face {
