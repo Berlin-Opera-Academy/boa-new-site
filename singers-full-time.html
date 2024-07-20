@@ -376,7 +376,7 @@
     <section>
       <div class="panel">
         <center>
-          <iframe src="https://docs.google.com/forms/d/1OODtiYx3EU9NferroLf5VjSwhDJqkbgZvviPsEBZIMw/viewform" max-width="500" height="833” frameborder="0" marginheight=“0” marginwidth="0">Loading…</iframe>
+          <iframe src="https://docs.google.com/forms/d/1OODtiYx3EU9NferroLf5VjSwhDJqkbgZvviPsEBZIMw/viewform" width="80%" height="833” frameborder="0" marginheight=“0” marginwidth="0">Loading…</iframe>
           </center> 
       </div>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -482,6 +482,28 @@
     </footer>
 
   <script src="hamburger-menu.js"></script>
+  <script>
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset;
+    const content = document.querySelector('.content');
+
+    if (currentScroll <= 0) {
+      content.classList.remove('disappear');
+    }
+
+    if (currentScroll > lastScroll && currentScroll > window.innerHeight / 8) {
+      // Scrolling down
+      content.classList.add('disappear');
+    } else if (currentScroll < lastScroll && !(currentScroll <= window.innerHeight / 8)) {
+      // Scrolling up
+      content.classList.remove('disappear');
+    }
+
+    lastScroll = currentScroll;
+  });
+  </script>
 </body>
 
 </html>
