@@ -211,7 +211,7 @@ body {
 
 @media screen and (max-width: 600px) {
   h1.title.content-title {
-    font-size: 2em !important; /* adjust as needed */
+    font-size: 1.5em !important; /* adjust as needed */
   }
 }
 
@@ -359,10 +359,54 @@ body, html {
   font-size: 4.5rem;
 }
 
+#align-left {
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 50%;
+}
+
+.half-flex {
+  display: flex;
+  align-items: stretch; /* Ensure children stretch to fill the container's height */
+}
+
+.half-flex .panel-image {
+  flex: 1; /* Allow the image container to grow and fill the available space */
+  display: flex; /* Make it a flex container to center the image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  background-color: black; /* Black padding around the image */
+}
+
+.half-flex .panel-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Scale the image to fit without warping, adding black padding as needed */
+}
+
 /* Style for screens smaller than 600px */
 @media screen and (max-width: 600px) {
   .title {
     font-size: 2em;
+  }
+
+  .panel-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  #align-left {
+    max-width: 100%;
+  }
+
+  #align-left .apply-button-container{
+    align-self: center;
+  }
+  
+
+  .half-flex {
+    flex-direction: column;
   }
 }
 
@@ -1158,7 +1202,7 @@ a {
 
   .carousel article {
     display: inline-block;
-    width: 18em;
+    max-width: 18em;
     background: #000;
     text-align: center;
     vertical-align:top;
@@ -1195,28 +1239,3 @@ a {
       text-align: center;
     }
   
-#align-left {
-  text-align: left;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 50%;
-}
-
-.half-flex {
-  display: flex;
-  align-items: stretch; /* Ensure children stretch to fill the container's height */
-}
-
-.half-flex .panel-image {
-  flex: 1; /* Allow the image container to grow and fill the available space */
-  display: flex; /* Make it a flex container to center the image */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  background-color: black; /* Black padding around the image */
-}
-
-.half-flex .panel-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* Scale the image to fit without warping, adding black padding as needed */
-}
