@@ -355,6 +355,10 @@ body, html {
   padding-top: 1em;
 }
 
+.content-title {
+  font-size: 4.5rem;
+}
+
 /* Style for screens smaller than 600px */
 @media screen and (max-width: 600px) {
   .title {
@@ -1053,4 +1057,166 @@ a {
   transform: scale(1.1); /* adjust as needed */
   color: hotpink;
   border-color: hotpink;
+}
+
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 2em 0 2em 0;
+  margin-bottom: 0;
+  background-color: rgb(0, 0, 0);
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
+}
+
+.carousel h2 {
+  margin: 0 auto;
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
+  padding: 0 0 1rem 0;
+  width: fit-content;
+  font-size: 2rem;
+
+}
+
+  .carousel .forward, .carousel .backward, .forwardstaff, .backwardstaff {
+    position: absolute;
+    top: 50%;
+    width: 6em;
+    height: 12em;
+    margin-top: -6em;
+    cursor: pointer;
+  }
+
+    .carousel .forward:before, .carousel .backward:before, .forwardstaff:before, .backwardstaff:before {
+      content: '';
+      display: block;
+      width: 6em;
+      height: 6em;
+      border-radius: 100%;
+      background-color: rgba(72, 57, 73, 0.5);
+      position: absolute;
+      top: 50%;
+      margin-top: -3em;
+      -moz-transition: background-color 0.35s ease-in-out;
+      -webkit-transition: background-color 0.35s ease-in-out;
+      -o-transition: background-color 0.35s ease-in-out;
+      -ms-transition: background-color 0.35s ease-in-out;
+      transition: background-color 0.35s ease-in-out;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .carousel .forward:after, .carousel .backward:after, .forwardstaff:after, .backwardstaff:after {
+      content: '';
+      width: 3em;
+      height: 3em;
+      position: absolute;
+      top: 50%;
+      margin: -1.5em 0 0 0;
+      background: url("images/arrow.svg") no-repeat center center;
+    }
+
+    .carousel .forward:hover:before, .carousel .backward:hover:before, .forwardstaff:hover:before, .backwardstaff:hover:before {
+      background-color: rgba(239, 131, 118, 0.75);
+    }
+
+  .carousel .forward, .forwardstaff {
+    right: 0;
+    border: none;
+  }
+
+    .carousel .forward:before, .forwardstaff:before {
+      right: -3em;
+    }
+
+    .carousel .forward:after, .forwardstaff:after {
+      right: -0.25em;
+    }
+
+  .carousel .backward, .backwardstaff {
+    left: 0;
+    border: none;
+  }
+
+    .carousel .backward:before, .backwardstaff:before {
+      left: -3em;
+    }
+
+    .carousel .backward:after, .backwardstaff:after {
+      left: -0.25em;
+      -moz-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+
+  .carousel .reel {
+    white-space: nowrap;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 2em 0 2em;
+  }
+
+  .carousel article {
+    display: inline-block;
+    width: 18em;
+    background: #000;
+    text-align: center;
+    vertical-align:top;
+    padding: 0 1em 3em 1em;
+    margin: 0 2em 0 0;
+    white-space: normal;
+    opacity: 1.0;
+    -moz-transition: opacity 0.75s ease-in-out;
+    -webkit-transition: opacity 0.75s ease-in-out;
+    -ms-transition: opacity 0.75s ease-in-out;
+    transition: opacity 0.75s ease-in-out;
+  }
+
+    .carousel article.loading {
+      opacity: 0;
+    }
+
+    .carousel article .image {
+      position: relative;
+      left: -1em;
+      top: 0;
+      width: auto;
+      margin-right: -2em;
+      margin-bottom: 3em;
+      vertical-align:top;
+			
+    }
+
+    .carousel article img {
+      border-radius: 100%;	
+    }
+
+    .carousel article p {
+      text-align: center;
+    }
+  
+#align-left {
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 50%;
+}
+
+.half-flex {
+  display: flex;
+  align-items: stretch; /* Ensure children stretch to fill the container's height */
+}
+
+.half-flex .panel-image {
+  flex: 1; /* Allow the image container to grow and fill the available space */
+  display: flex; /* Make it a flex container to center the image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  background-color: black; /* Black padding around the image */
+}
+
+.half-flex .panel-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Scale the image to fit without warping, adding black padding as needed */
 }
