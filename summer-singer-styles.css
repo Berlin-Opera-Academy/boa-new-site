@@ -471,6 +471,11 @@ body, html {
   .image-grid {
     grid-template-columns: 1fr;
   }
+  
+  #path-header {
+    font-size: 1em;
+    font-weight: 800;
+  }
 }
 
 .image-grid img {
@@ -478,6 +483,14 @@ body, html {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+#fest {
+  grid-column: 2 / 3;
+}
+
+#studio {
+  grid-column: 3 / 4;
 }
 
 .image-container:hover {
@@ -585,6 +598,10 @@ body, html {
 .panel .apply-button {
   font-size: 1em; /* Adjust as needed */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.no-bold {
+  font-weight: 300;
 }
 
 .apply-button:hover {
