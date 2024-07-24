@@ -19,8 +19,8 @@ body {
 
 @font-face {
   font-family: 'Euclid Flex';
-  src: url('assets/[Swiss Typefaces] Euclid Flex/EuclidFlex-Medium/fonts/EuclidFlex-Medium.woff2') format('woff2'),
-       url('assets/[Swiss Typefaces] Euclid Flex/EuclidFlex-Medium/fonts/EuclidFlex-Medium.woff') format('woff');
+  src: url('assets/EuclidFlex/EuclidFlex-Medium/fonts/EuclidFlex-Medium.woff2') format('woff2'),
+       url('assets/EuclidFlex/EuclidFlex-Medium/fonts/EuclidFlex-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
