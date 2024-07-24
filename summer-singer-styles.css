@@ -336,7 +336,7 @@ body, html {
 }
 
 .title {
-  font-family: 'Euclid Flex Medium', sans-serif;
+  font-family: 'Euclid Flex', sans-serif;
   font-size: 8rem;
   letter-spacing: 0.1em;
   transform: scaleY(1.2);
@@ -1273,4 +1273,13 @@ a {
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.paypal {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }

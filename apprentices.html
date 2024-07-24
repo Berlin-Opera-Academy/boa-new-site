@@ -52,17 +52,20 @@
   <!-- Panel Section -->
   <section>
     <div class="panel">
-      <div class="panel-content">
-        <h1 id="path-header">
-          BOA’s Apprentices are the bedrock of the Academy. We have elected to waive application fees for our
-          apprentices and, thanks to funding applied directly to the Apprenticeship Program, the experience is
-          tuition-free. Apprentices are guided by BOA Faculty and Staff while being given the autonomy to take on
-          responsibility, embrace opportunities, and work from their own initiative. We find this is the most effective
-          way of preparing for careers in the opera industry.
-        </h1>
-        <div class="apply-button-container">
-          <button class="apply-button">APPLY NOW</button>
+      <div class="half-flex">
+        <div class="panel-content">
+          <h1 id="path-header">
+            BOA’s Apprentices are the bedrock of the Academy.
+          </h1>
         </div>
+        <div class="panel-content">
+          <h3>
+            They leave with the pride of directly contributing to the production of multiple operas. Apprentices at BOA will receive personal instruction from industry professionals while learning by doing in their preferred department.
+          </h3>
+        </div>
+      </div>
+      <div class="apply-button-container">
+        <button class="apply-button">APPLY NOW</button>
       </div>
     </div>
   </section>
@@ -425,25 +428,11 @@
 
   <section>
     <div class="panel">
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <div class="paypal-form">
-          <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="GY63H9CDUTCTQ" />
-          <input type="hidden" name="on0" value="Application Fee" />
-          Application Fee
-          <select name="os0">
-            <option value="BOA Application Fee">
-              BOA Application Fee €39.00 EUR
-            </option>
-          </select>
-          <input type="hidden" name="on1" value="Singer Name" />
-          Singer Name
-          <input type="text" name="os1" maxLength="200" />
-          <input type="hidden" name="currency_code" value="EUR" />
-          <input type="image" src="https://www.paypalobjects.com/en_US/DE/i/btn/btn_paynowCC_LG.gif" border="0"
-            name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
-        </div>
-      </form>
+      <div class="paypal">
+        <script src="https://www.paypal.com/sdk/js?client-id=BAAWhzNujw7mfvlZ-Ma3TGv05Ju_f3qj6CIzHm7IOehm47td8vKVP3NYnLzQz4ZJn1sGBg3_cYbfYMPvtk&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+        <div id="paypal-container-PFXYD25T6BC2A"></div>
+        <script src="paypal.js"></script>
+      </div>
     </div>
   </section>
 
