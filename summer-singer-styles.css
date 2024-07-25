@@ -355,6 +355,14 @@ body, html {
   list-style: none;
 }
 
+.panel-content a {
+  transition: color .3s ease;
+}
+
+.panel-content a:hover {
+  color: hotpink;
+}
+
 #productions h1{
   margin: 0;
 }
@@ -1308,4 +1316,27 @@ a {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  z-index: 1000;
+  transition: color 0.3s ease;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.arrow:hover {
+  color: rgba(255, 255, 255, 0.8);
 }

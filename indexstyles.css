@@ -76,12 +76,24 @@ body {
 
 .hamburger-menu div {
   width: 2rem;
-  height: 0.015625em;
+  height: 0.25rem; /* Adjusted for visibility */
   background: var(--secondary-color);
-  border-radius: 0.625em;
+  border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
   transform-origin: 1px;
+}
+
+.hamburger-menu.open div:nth-child(1) {
+  transform: rotate(45deg) translate(0px, -5px);
+}
+
+.hamburger-menu.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, 0px);
 }
 
 /* Navigation Menu */

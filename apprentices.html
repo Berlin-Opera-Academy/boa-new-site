@@ -50,12 +50,12 @@
   <section>
     <div class="panel">
       <div class="half-flex">
-        <div class="panel-content">
-          <h1 id="path-header">
+        <div class="panel-content" id="align-left">
+          <h1>
             BOA’s Apprentices are the bedrock of the Academy.
           </h1>
         </div>
-        <div class="panel-content">
+        <div class="panel-content" id="align-left">
           <h3>
             They leave with the pride of directly contributing to the production of multiple operas. Apprentices at BOA will receive personal instruction from industry professionals while learning by doing in their preferred department.
           </h3>
@@ -67,22 +67,22 @@
     </div>
   </section>
 
-  <section>
+  <section id="apprentice-roles">
     <div class="panel">
       <div class="half-flex">
         <div class="panel-content" id="align-left">
           <h1>CHOOSE YOUR POSITION</h1>
           <ul>
-            <li>Répétiteur</li>
-            <li>Assistant Conductor</li>
-            <li>Assistant Director</li>
-            <li>Stage Manager</li>
-            <li>Film & Media Intern</li>
-            <li>Production & Management Assistant</li>
-            <li>Costume Intern</li>
-            <li>Administrative Assistant</li>
-            <li>Marketing Assistant</li>
-            <li>Set Design Assistant for Simone Serlenga</li>
+            <li class="apprentice-role" id="rep"><a href="apprentice-role.html#rep">Répétiteur</a></li>
+            <li class="apprentice-role" id="ac"><a href="apprentice-role.html#ac">Assistant Conductor</a></li>
+            <li class="apprentice-role" id="ad"><a href="apprentice-role.html#ad">Assistant Director</a></li>
+            <li class="apprentice-role" id="sm"><a href="apprentice-role.html#sm">Stage Manager</a></li>
+            <li class="apprentice-role" id="fm"><a href="apprentice-role.html#fm">Film & Media Intern</a></li>
+            <li class="apprentice-role" id="pm"><a href="apprentice-role.html#pm">Production & Management Assistant</a></li>
+            <li class="apprentice-role" id="cost"><a href="apprentice-role.html#cost">Costume Intern</a></li>
+            <li class="apprentice-role" id="admin"><a href="apprentice-role.html#admin">Administrative Assistant</a></li>
+            <li class="apprentice-role" id="market"><a href="apprentice-role.html#market">Marketing Assistant</a></li>
+            <li class="apprentice-role" id="set"><a href="apprentice-role.html#set">Set Design Assistant for Simone Serlenga</a></li>
           </ul>
           <div class="apply-button-container">
             <button class="apply-button">APPLY NOW</button>
@@ -179,28 +179,7 @@
   </footer>
 
   <script src="hamburger-menu.js"></script>
-  <script>
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', function () {
-      const currentScroll = window.pageYOffset;
-      const content = document.querySelector('.content');
-
-      if (currentScroll <= 0) {
-        content.classList.remove('disappear');
-      }
-
-      if (currentScroll > lastScroll && currentScroll > window.innerHeight / 8) {
-        // Scrolling down
-        content.classList.add('disappear');
-      } else if (currentScroll < lastScroll && !(currentScroll <= window.innerHeight / 8)) {
-        // Scrolling up
-        content.classList.remove('disappear');
-      }
-
-      lastScroll = currentScroll;
-    });
-  </script>
+  <script src="apprentice-role-image.js"></script>
 </body>
 
 </html>
