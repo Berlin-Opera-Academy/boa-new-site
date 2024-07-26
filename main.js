@@ -7,8 +7,8 @@ var slides = [
       "media/header-berlin-opera-academy-reviews-what-people-are-saying-about-boa-on-social-media-and-blogs.jpg",
   },
   {
-    title: "Opernfest Venue Announced",
-    body: "Theater im Delphi: The BOA Opernfest 2024 Festival Venue is announced",
+    title: "Opernfest 2025 Program Announced",
+    body: "Berlin Opera Academy will be performing Cendrillon, L'incorinazione di Poppea, Die Fledermaus, and Die Zauberflöte. Apply today!",
     imageUrl: "media/delphi-summer-opera-theater-stage-experience.jpg",
   },
   {

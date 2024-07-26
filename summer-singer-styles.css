@@ -26,6 +26,14 @@ body {
 }
 
 @font-face {
+  font-family: 'Euclid Flex Bold';
+  src: url('assets/EuclidFlex/EuclidFlex-Bold/fonts/EuclidFlex-Bold.woff2') format('woff2'),
+       url('assets/EuclidFlex/EuclidFlex-Bold/fonts/EuclidFlex-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'HK Grotesk-ExtraLight';
   src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-ExtraLight.woff') format('truetype');
   font-weight: 100;
@@ -35,6 +43,13 @@ body {
 @font-face {
   font-family: 'HK Grotesk-Regular';
   src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-Regular.woff') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HK Bold';
+  src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-Bold.woff2') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
@@ -172,12 +187,6 @@ body {
   margin-bottom: 0.625em;
 }
 
-@media screen and (max-width: 600px) {
-  h2.subtitle {
-    font-size: 1.5em; /* adjust as needed */
-  }
-}
-
 #header-video {
   position: absolute;
   top: 50%;
@@ -207,23 +216,38 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .content {
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 75vh; /* Adjust as needed for mobile */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* This makes the container take up the full height of the viewport */
-    padding: 0 20px; /* Add horizontal padding */
+    justify-content: flex-end; /* Align children to the bottom */
   }
-  h1.title.content-title {
-    font-size: 2em !important; /* adjust as needed */
-  }
-}
 
-@media screen and (max-width: 600px) {
-  h1.title.content-title {
-    font-size: 1.5em !important; /* adjust as needed */
+  .header-img-container{
+    height: 75vh
+  }
+
+  .content {
+    font-family: 'Euclid Flex', sans-serif;
+    color: var(--secondary-color);
+    white-space: normal;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .video-container {
+    height: 75vh; /* Adjust as needed for mobile */
+  }
+
+  .title {
+    font-size: 7rem;
+    white-space: normal;
+    word-break: break-all;
+    margin: 0;
+    width: 100vw;
+    line-height: 90%;
   }
 }
 
@@ -280,14 +304,16 @@ body, html {
 .header {
   position: relative; /* Ensure this is a positioning context */
   height: 80vh; /* Match the height of the header-img-container */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .content {
   position: absolute;
-  bottom: -77px; /* Align to the bottom of .header */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-family: 'Euclid Flex', sans-serif;
   color: var(--secondary-color);
 }
@@ -296,6 +322,8 @@ body, html {
   font-family: 'Euclid Flex', sans-serif;
   font-size: 8rem;
   letter-spacing: 0.1em;
+  line-height: 90%;
+  margin: 0;
 }
 
 .header-img-container {
@@ -314,14 +342,37 @@ body, html {
   object-fit: cover;
 }
 
-/* New media query for mobile devices */
 @media screen and (max-width: 600px) {
-  .header-content {
+  .header {
     height: 75vh; /* Adjust as needed for mobile */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align children to the bottom */
+  }
+
+  .header-img-container{
+    height: 75vh
+  }
+
+  .content {
+    font-family: 'Euclid Flex', sans-serif;
+    color: var(--secondary-color);
+    white-space: normal;
+    justify-content: flex-end;
+    margin: 0;
   }
 
   .video-container {
     height: 75vh; /* Adjust as needed for mobile */
+  }
+
+  .title {
+    font-size: 7rem;
+    white-space: normal;
+    word-break: break-all;
+    margin: 0;
+    width: 100vw;
+    line-height: 90%;
   }
 }
 
@@ -374,6 +425,7 @@ body, html {
 #productions h1:first-of-type {
   margin-bottom: 0.5em;
   font-size: 2em;
+  font-family: "HK Bold";
   color: #eee;
 }
 
@@ -398,10 +450,6 @@ body, html {
 
 .other-titles {
   padding-top: 1em;
-}
-
-.content-title {
-  font-size: 4.5rem;
 }
 
 #align-left {
@@ -434,12 +482,21 @@ body, html {
   align-self: center;
 }
 
+.background-flex {
+  display: flex;
+  position: relative;
+}
+
+.background-panel-img {
+
+}
+
+.foreground {
+  position: absolute;
+}
+
 /* Style for screens smaller than 600px */
 @media screen and (max-width: 600px) {
-  .title {
-    font-size: 2em;
-  }
-
   .panel-content {
     margin: 0;
     padding: 0;

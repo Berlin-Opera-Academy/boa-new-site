@@ -53,7 +53,7 @@ const roles = [
     description: "Description for Administrative Assistant.",
     responsibilities: "Responsibilities for Administrative Assistant.",
     imagePath: "media/ad.jpg",
-    hash: "admin",
+    hash: "#admin",
   },
   {
     title: "Marketing Assistant",

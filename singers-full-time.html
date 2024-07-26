@@ -7,7 +7,7 @@
   <title>Berlin Opera Academy - Full Time</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="full-time-styles.css" />
+  <link rel="stylesheet" href="summer-singer-styles.css" />
   <script src="jquery.min.js"></script>
   <script src="jquery.dropotron.min.js"></script>
   <script src="jquery.scrolly.min.js"></script>
@@ -35,16 +35,12 @@
   </nav>
 
   <!-- Background image Section -->
-  <section>
+  <section class="header">
     <div class="header-img-container">
       <img class="background-img"
         src="media/header-berlin-opera-academy-reviews-what-people-are-saying-about-boa-on-social-media-and-blogs.jpg"
         alt="Singers" />
     </div>
-  </section>
-
-  <!-- Content Section -->
-  <section>
     <div class="content">
       <h1 class="title content-title">SINGERS // FULL-TIME</h1>
     </div>
@@ -466,28 +462,6 @@
     </footer>
 
   <script src="hamburger-menu.js"></script>
-  <script>
-  let lastScroll = 0;
-
-  window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset;
-    const content = document.querySelector('.content');
-
-    if (currentScroll <= 0) {
-      content.classList.remove('disappear');
-    }
-
-    if (currentScroll > lastScroll && currentScroll > window.innerHeight / 8) {
-      // Scrolling down
-      content.classList.add('disappear');
-    } else if (currentScroll < lastScroll && !(currentScroll <= window.innerHeight / 8)) {
-      // Scrolling up
-      content.classList.remove('disappear');
-    }
-
-    lastScroll = currentScroll;
-  });
-  </script>
 </body>
 
 </html>
