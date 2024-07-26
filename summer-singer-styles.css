@@ -299,6 +299,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #000;
 }
 
 .header {
@@ -487,6 +488,74 @@ body, html {
   padding-right: 0;
 }
 
+#orchestra-schedule {
+  background-image: url('media/flute-fire-berlin-opera-academy-apprentices-develop-your-career-in-opera-production-and-management-at-boa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Adjust height as needed */
+    width: 100%;
+    position: relative;
+    color: white; /* Text color */
+}
+
+#full-time-info {
+  background-image: url('media/flutezauberflötetitatic.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Adjust height as needed */
+    width: 100%;
+    position: relative;
+    color: white; /* Text color */
+}
+
+#festival-info {
+  background-image: url('media/berlin-opera-academy-zauberflote-summer-festival-two-singers.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Adjust height as needed */
+    width: 100%;
+    position: relative;
+    color: white; /* Text color */
+}
+
+.gradient .panel-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, transparent 30%, black 100%);
+  pointer-events: none; /* Ensure the pseudo-element does not interfere with user interactions */
+  z-index: -1;
+}
+
+.gradient .panel-content {
+
+  text-align: left;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 25px;
+}
+
+.gradient .panel-content h3, .gradient .panel-content h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.gradient .panel-content h1 {
+  font-family: "HK Bold";
+  letter-spacing: .1em;
+}
+
+.gradient .panel-content ul {
+  width: 50%;
+}
+
+.gradient .panel-content li {
+  list-style: disc;
+}
+
 .background-flex {
   display: flex;
   position: relative;
@@ -566,6 +635,30 @@ body, html {
     display: block; /* Change to block to stack elements vertically */
   }
 
+  #productions {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  #productions h1{
+    margin: 0;
+  }
+  
+  #productions h1:first-of-type {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    font-family: "HK Bold";
+    color: #eee;
+  }
+  
+  #productions h1:last-of-type{
+    margin-bottom: 1em;
+  }
+
+  #productions .apply-button-container {
+    align-self: center;
+  }
+
   #festival-info {
     padding-left: 0;
     padding-right: 0;
@@ -586,8 +679,11 @@ body, html {
     object-fit: contain; /* Ensure the image covers the entire area without distortion */
   }
 
-  .foreground {
-    position: static; /* Remove absolute positioning */
+  .gradient .panel-content::after {
+    background: linear-gradient(to left, transparent 0%, black 100%);
+  }
+
+  .gradient .panel-content {
     display: flex; /* Change to block to stack elements vertically */
     text-align: left;
     align-items: flex-start;
@@ -595,23 +691,28 @@ body, html {
     gap: 25px;
   }
 
-  .foreground h3, .foreground h1 {
+  .foreground h3, .foreground h1,
+  .gradient .panel-content h3, .gradient .panel-content h1 {
     margin: 0 0 0 .5rem;
     padding: 0;
   }
   
-  .foreground h1 {
+  .foreground h1,
+  .gradient .panel-content h1 {
     font-family: "HK Bold";
     letter-spacing: .1em;
   }
   
-  .foreground ul {
-    width: 95%;
-    margin: 0 0 0 2rem;
-    padding: 0;
+  .foreground ul, 
+  .gradient .panel-content ul {
+    width: 90%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 2rem;
+    overflow: hidden;
   }
 
-  .foreground .apply-button-container {
+  .foreground .apply-button-container, 
+  .gradient .panel-content .apply-button-container {
     align-self: center;
   }
 }
@@ -1497,14 +1598,3 @@ a {
 .arrow:hover {
   color: rgba(255, 255, 255, 0.8);
 }
-
-#orchestra-schedule {
-  background-image: url('media/flute-fire-berlin-opera-academy-apprentices-develop-your-career-in-opera-production-and-management-at-boa.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100%; /* Adjust height as needed */
-    width: 100%;
-    position: relative;
-    color: white; /* Text color */
-}
-

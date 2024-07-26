@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
           image.src = "path/to/pm-image.jpg";
           break;
         case "cost":
-          image.src = "path/to/cost-image.jpg";
+          image.src = "media/costume-intern.jpg";
           break;
         case "admin":
           image.src = "path/to/admin-image.jpg";
