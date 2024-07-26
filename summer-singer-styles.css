@@ -482,17 +482,65 @@ body, html {
   align-self: center;
 }
 
+#festival-info {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .background-flex {
   display: flex;
   position: relative;
 }
 
 .background-panel-img {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ensure the parent div takes the full height */
+}
 
+.background-panel-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black, transparent);
+  pointer-events: none; /* Ensure the pseudo-element does not interfere with user interactions */
+}
+
+.background-panel-img img {
+  width: 100%; /* Ensure the image takes the full width of the parent */
+  height: 100%; /* Ensure the image takes the full height of the parent */
+  object-fit: contain; /* Ensure the image covers the entire area without distortion */
 }
 
 .foreground {
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 25px;
+}
+
+.foreground h3, .foreground h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.foreground h1 {
+  font-family: "HK Bold";
+  letter-spacing: .1em;
+}
+
+.foreground ul {
+  width: 50%;
+}
+
+.foreground li {
+  list-style: disc;
 }
 
 /* Style for screens smaller than 600px */
@@ -506,13 +554,65 @@ body, html {
     max-width: 100%;
   }
 
-  #align-left .apply-button-container{
+  #align-left .apply-button-container {
     align-self: center;
   }
-  
 
   .half-flex {
     flex-direction: column;
+  }
+
+  .background-flex {
+    display: block; /* Change to block to stack elements vertically */
+  }
+
+  #festival-info {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .background-panel-img {
+    width: 100%;
+    height: auto; /* Allow the height to adjust based on the image aspect ratio */
+  }
+
+  .background-panel-img::after {
+    display: none; /* Remove the gradient */
+  }
+
+  .background-panel-img img {
+    width: 100%; /* Ensure the image takes the full width of the parent */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image covers the entire area without distortion */
+  }
+
+  .foreground {
+    position: static; /* Remove absolute positioning */
+    display: flex; /* Change to block to stack elements vertically */
+    text-align: left;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 25px;
+  }
+
+  .foreground h3, .foreground h1 {
+    margin: 0 0 0 .5rem;
+    padding: 0;
+  }
+  
+  .foreground h1 {
+    font-family: "HK Bold";
+    letter-spacing: .1em;
+  }
+  
+  .foreground ul {
+    width: 95%;
+    margin: 0 0 0 2rem;
+    padding: 0;
+  }
+
+  .foreground .apply-button-container {
+    align-self: center;
   }
 }
 
@@ -1066,10 +1166,6 @@ fade-in-button {
 .logo-container {
   width: auto;
   height: auto;
-}
-
-.logo {
-  /* Remove width and height properties */
 }
 
 .logo-container img {
