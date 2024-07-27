@@ -487,6 +487,19 @@ body, html {
   align-self: center;
 }
 
+.faq p {
+  margin: 0;
+}
+
+.faq h1 {
+  margin: 0;
+}
+
+.faq .question {
+  font-family: "HK Bold";
+  margin-top: 1rem;
+}
+
 #festival-info {
   padding-left: 0;
   padding-right: 0;

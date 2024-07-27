@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
           image.src = "path/to/sm-image.jpg";
           break;
         case "fm":
-          image.src = "path/to/fm-image.jpg";
+          image.src =
+            "media/film-and-media-best-internship-apprenticeship-berlin-summer.jpeg";
           break;
         case "pm":
           image.src = "path/to/pm-image.jpg";
