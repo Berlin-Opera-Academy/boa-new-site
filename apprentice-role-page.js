@@ -2,7 +2,8 @@
 const roles = [
   {
     title: "Répétiteur",
-    description: "Description for Répétiteur.",
+    description:
+      "Under the guidance of our staff, you will have the chance to learn what is required in opera houses and what is expected from accompanists. Your development and education will be furthered through assisting individual lessons on the essential keys of good coaching and skillful accompaniment. All assigned activities are based on the individual’s desire and interest, and the merit earned by their preparation level upon arrival. As we will provide contacts and opportunities to play for experienced professionals, who can recommend employment, we expect all apprentices to arrive with a professional level of preparation. You will:",
     responsibilities: "Responsibilities for Répétiteur",
     hash: "#rep",
   },
