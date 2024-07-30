@@ -487,6 +487,18 @@ body, html {
   align-self: center;
 }
 
+.infographic {
+  display: flex;
+}
+
+.infographic img {
+  width: 33vw;
+}
+
+#apply-info .panel-content, #apply-info h1 {
+  margin-top: 0;
+}
+
 .faq p {
   margin: 0;
 }
@@ -662,6 +674,18 @@ body, html {
     display: block; /* Change to block to stack elements vertically */
   }
 
+  .infographic{
+    flex-direction: column;
+  }
+
+  .info-block img{
+    width: 94vw;
+  }
+
+  .info-block:nth-of-type(2){
+    margin-top: -2em;
+  }
+
   #productions {
     align-items: flex-start;
     text-align: left;
@@ -741,6 +765,19 @@ body, html {
   .foreground .apply-button-container, 
   .gradient .panel-content .apply-button-container {
     align-self: center;
+  }
+
+  .faq:first-of-type h1 {
+    margin-top: .5em;
+  }
+
+  .faq:first-of-type ul {
+    padding: 0;
+  }
+
+  .faq:first-of-type li {
+    font-size: 1.5em;
+    text-decoration: underline;
   }
 }
 
@@ -1503,7 +1540,7 @@ a {
       position: absolute;
       top: 50%;
       margin: -1.5em 0 0 0;
-      background: url("images/arrow.svg") no-repeat center center;
+      background: url("media/arrow.svg") no-repeat center center;
     }
 
     .carousel .forward:hover:before, .carousel .backward:hover:before, .forwardstaff:hover:before, .backwardstaff:hover:before {
