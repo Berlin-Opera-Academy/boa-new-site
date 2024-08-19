@@ -407,6 +407,30 @@ body, html {
   list-style: none;
 }
 
+.info-card-container{
+  display: flex;
+  align-self: center;
+  gap: 50px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1.5px white solid;
+  padding: 1rem;
+  max-width: 320px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.info-card h4 {
+  font-family: 'HK Bold';
+}
+
+.info-card h4, .info-card p {
+  margin: 0;
+}
+
 .panel-content a {
   transition: color .3s ease;
 }
@@ -515,6 +539,11 @@ body, html {
 #festival-info {
   padding-left: 0;
   padding-right: 0;
+}
+
+#festival-info .half-flex, #festival-info .panel-content {
+  justify-content: center;
+  align-items: center;
 }
 
 #orchestra-schedule {
@@ -676,6 +705,11 @@ body, html {
 
   .infographic{
     flex-direction: column;
+  }
+  
+  .info-card {
+    max-width: 80vw;
+    align-self: center;
   }
 
   .info-block img{
