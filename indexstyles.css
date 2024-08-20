@@ -907,10 +907,6 @@ fade-in-button {
   height: auto;
 }
 
-.logo {
-  /* Remove width and height properties */
-}
-
 .logo-container img {
   width: 10px;
   height: 10px;
@@ -947,11 +943,6 @@ fade-in-button {
   width: 1.5em;
   height: 1.5em;
 }
-
-
-
-
-
 
 /*<-------- IMPRESSUM & OTHER PAGES -----------------*/
 
