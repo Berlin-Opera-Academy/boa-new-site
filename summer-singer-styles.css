@@ -421,6 +421,7 @@ body, html {
   padding: 1rem;
   max-width: 320px;
   background: rgba(0, 0, 0, 0.6);
+  text-align: left;
 }
 
 .info-card h4 {
@@ -544,6 +545,21 @@ body, html {
 #festival-info .half-flex, #festival-info .panel-content {
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+#tuition-scholarship p, #tuition-scholarship h1 {
+  margin: 0;
+}
+
+#tuition-scholarship {
+  background-image: url('media/BOA-Opernfest2024_Zauberflöte3-5Aug24_(c)Opernfotografie-DetlefKurth_DSC00040-crop.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 100%; /* Adjust height as needed */
+    width: 100%;
+    position: relative;
+    color: white; /* Text color */
 }
 
 #orchestra-schedule {
@@ -707,6 +723,11 @@ body, html {
     flex-direction: column;
   }
   
+  .info-card-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
   .info-card {
     max-width: 80vw;
     align-self: center;
@@ -742,11 +763,6 @@ body, html {
 
   #productions .apply-button-container {
     align-self: center;
-  }
-
-  #festival-info {
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .background-panel-img {
