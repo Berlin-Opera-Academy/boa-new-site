@@ -15,9 +15,12 @@
   <script src="skel.min.js"></script>
   <script src="util.js"></script>
   <script src="old-main.js"></script>
+  <script src="hamburger-menu.js"></script>
 </head>
 
 <body>
+  <a href="index.html"><div class="home-link"></div></a>
+
   <!-- Hamburger Menu -->
   <div class="hamburger-menu">
     <div></div>
@@ -495,30 +498,6 @@
           </div>
       </div> 
     </footer>
-
-  <script src="hamburger-menu.js"></script>
-  <script>
-  let lastScroll = 0;
-
-  window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset;
-    const content = document.querySelector('.content');
-
-    if (currentScroll <= 0) {
-      content.classList.remove('disappear');
-    }
-
-    if (currentScroll > lastScroll && currentScroll > window.innerHeight / 8) {
-      // Scrolling down
-      content.classList.add('disappear');
-    } else if (currentScroll < lastScroll && !(currentScroll <= window.innerHeight / 8)) {
-      // Scrolling up
-      content.classList.remove('disappear');
-    }
-
-    lastScroll = currentScroll;
-  });
-  </script>
 </body>
 
 </html>

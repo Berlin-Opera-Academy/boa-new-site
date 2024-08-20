@@ -77,6 +77,21 @@ body {
   padding: 0;
 }
 
+.home-link {
+  background-image: url('media/boa_logo_square_white.png');
+  background-size: 120px 100px; /* Set the size of the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: top left; /* Position the background image in the top left */
+  height: 100px; /* Set the height of the container */
+  width: 120px; /* Set the width of the container */
+  position: absolute; /* Position the container absolutely */
+  margin: 10px 0 0 10px;
+  cursor: pointer;
+  top: 0; /* Align the container to the top */
+  left: 0; /* Align the container to the left */
+  z-index: 10; /* Remove the z-index property */
+}
+
 /* Hamburger Menu */
 .hamburger-menu {
   position: fixed;
@@ -1398,8 +1413,8 @@ fade-in-button {
 }
 
 .info-container .logo {
-  width: 10px;
-  height: 10px;
+  width: 60px;
+  height: 50px;
   flex-shrink: 0;
 }
 
