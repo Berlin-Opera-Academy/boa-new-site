@@ -646,6 +646,24 @@ body, html {
   color: white; /* Text color */
 }
 
+#faq-selection{
+  background-image: url('media/landscape-general-delphi-opera-production-full-orchestra.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%; /* Adjust height as needed */
+  width: 100%;
+  position: relative;
+  color: white; /* Text color */
+}
+
+.faq .panel-content ul, .faq .panel-content li{
+  list-style: none !important;
+}
+
+.faq .panel-content {
+  gap: 0 !important;
+}
+
 .gradient .panel-content::after {
   content: "";
   position: absolute;
