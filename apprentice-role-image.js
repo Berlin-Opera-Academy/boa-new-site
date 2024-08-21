@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
           image.src = "path/to/rep-image.jpg";
           break;
         case "ac":
-          image.src = "path/to/ac-image.jpg";
+          image.src = "media/assistant-conductor-apprentice.jpg";
           break;
         case "ad":
           image.src = "path/to/ad-image.jpg";
           break;
         case "sm":
-          image.src = "path/to/sm-image.jpg";
+          image.src = "media/stage-manager-apprentice.jpg";
           break;
         case "fm":
           image.src =
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
           image.src = "path/to/market-image.jpg";
           break;
         case "set":
-          image.src = "path/to/set-image.jpg";
+          image.src = "media/lighting-apprentice.jpg";
           break;
         default:
           image.src = "default-image.jpg";

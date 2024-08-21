@@ -12,7 +12,7 @@ const roles = [
     title: "Assistant Conductor",
     description: "Description for Assistant Conductor.",
     responsibilities: "Responsibilities for Assistant Conductor.",
-    imagePath: "media/ac.jpg",
+    imagePath: "media/assistant-conductor-apprentice.jpg",
     hash: "#ac",
   },
   {
@@ -26,7 +26,7 @@ const roles = [
     title: "Stage Manager",
     description: "Description for Stage Manager.",
     responsibilities: "Responsibilities for Stage Manager.",
-    imagePath: "media/ad.jpg",
+    imagePath: "media/stage-manager-apprentice.jpg",
     hash: "#sm",
   },
   {
@@ -69,7 +69,7 @@ const roles = [
     title: "Set Design Assistant",
     description: "Description for Set Design Assistant.",
     responsibilities: "Responsibilities for Set Design Assistant.",
-    imagePath: "media/ad.jpg",
+    imagePath: "media/lighting-apprentice.jpg",
     hash: "#set",
   },
   // Add more roles as needed
