@@ -420,7 +420,7 @@ body, html {
   line-height: 1.5;
   font-weight: 50;
   margin: 1em 2em;
-  padding: 0.25em 2em;
+  padding: 0.25em 1em;
 }
 
 .panel-content li {
