@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     role.addEventListener("mouseover", () => {
       switch (role.id) {
         case "rep":
-          image.src = "path/to/rep-image.jpg";
+          image.src = "media/apprentice-repetiteur-ariadne-detlef-kurth.jpg";
           break;
         case "ac":
           image.src = "media/assistant-conductor-apprentice.jpg";
