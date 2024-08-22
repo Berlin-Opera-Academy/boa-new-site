@@ -897,6 +897,11 @@ body, html {
     font-size: 1.5em;
     text-decoration: underline;
   }
+
+  .faq .half-flex .panel-image {
+    order: 2;
+    margin-top: 2em;
+  } 
 }
 
 .apply-button {
