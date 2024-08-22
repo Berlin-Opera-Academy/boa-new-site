@@ -18,7 +18,7 @@ window.addEventListener("load", function () {
       description.style.color = "#fff";
       description.style.fontSize = "1em";
       description.style.margin = "1em 0 -1em 0";
-      description.innerHTML = "<strong>BOA Application Fee - 39€</strong>";
+      description.innerHTML = "<strong>BOA Application Fee - 25€</strong>";
       total.remove().observer.disconnect(); // Stop observing once we've found and removed the element
     }
   });
