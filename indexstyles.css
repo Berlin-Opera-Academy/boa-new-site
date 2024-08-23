@@ -40,6 +40,27 @@ body {
 }
 
 @font-face {
+  font-family: 'HK Bold';
+  src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-Bold.woff2') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HK Medium Bold';
+  src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-SemiBold.woff2') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HK Italic';
+  src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-Italic.woff2') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Montserrat-Bold';
   src: url('assets/Montserrat/static/Montserrat-Bold.ttf') format('woff2');
   font-weight: 100;
@@ -175,6 +196,16 @@ body {
 @media screen and (max-width: 600px) {
   h2.subtitle {
     font-size: 1.5em; /* adjust as needed */
+  }
+
+  #align-left {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  #align-left h1{
+    width: 100%;
   }
 }
 
@@ -364,6 +395,91 @@ body, html {
 .other-titles {
   padding-top: 1em;
 }
+
+#full-time-info {
+  background-image: url('media/flutezauberflötetitatic-nogradient.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100%; /* Adjust height as needed */
+    width: 100%;
+    position: relative;
+    color: white; /* Text color */
+}
+
+#align-left {
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 50%;
+}
+
+#full-time-info .half-flex, #full-time-info .panel-content {
+  display: flex;
+  align-items: stretch; /* Ensure children stretch to fill the container's height */
+  max-width: 100%;
+}
+
+#full-time-info.panel {
+  background-color: black;
+  color: var(--secondary-color);
+  padding: 1.25em;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#full-time-info .panel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5;
+  font-weight: 50;
+  margin: 1em 2em;
+  padding: 0.25em 1em;
+}
+
+#full-time-info.gradient .panel-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, transparent 10%, black 100%);
+  pointer-events: none; /* Ensure the pseudo-element does not interfere with user interactions */
+  z-index: -1;
+}
+
+#full-time-info.gradient .panel-content {
+  text-align: left;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 25px;
+}
+
+#full-time-info.gradient .panel-content h3, #full-time-info.gradient .panel-content h1, #full-time-info.gradient .panel-content p  {
+  margin: 0;
+  padding: 0;
+}
+
+#full-time-info.gradient .panel-content h1 {
+  font-family: "HK Bold";
+  letter-spacing: .1em;
+}
+
+#full-time-info.gradient .panel-content ul {
+  width: 50%;
+}
+
+#full-time-info.gradient .panel-content li {
+  list-style: disc;
+}
+
 
 /* Style for screens smaller than 600px */
 @media screen and (max-width: 600px) {
