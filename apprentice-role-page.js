@@ -41,7 +41,7 @@ const roles = [
     title: "Production & Management Assistant",
     description: "Description for Production & Management Assistant.",
     responsibilities: "Responsibilities for Production & Management Assistant.",
-    imagePath: "media/ad.jpg",
+    imagePath: "media/lighting-apprentice.jpg",
     hash: "#pm",
   },
   {
