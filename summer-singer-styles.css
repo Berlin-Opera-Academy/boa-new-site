@@ -87,8 +87,8 @@ body {
 }
 
 .no-margin {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .home-link {
@@ -594,6 +594,9 @@ em {
 
 #apply-info .panel-content{
   margin: 1rem 0 0 0;
+}
+#faq-selection .panel-content {
+  width: 50vw;
 }
 
 .faq p {
