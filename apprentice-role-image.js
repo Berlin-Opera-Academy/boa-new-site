@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "media/film-and-media-best-internship-apprenticeship-berlin-summer.jpeg";
           break;
         case "pm":
-          image.src = "path/to/pm-image.jpg";
+          image.src = "media/lighting-apprentice.jpg";
           break;
         case "cost":
           image.src = "media/costume-intern.jpg";
