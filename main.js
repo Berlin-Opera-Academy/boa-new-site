@@ -36,7 +36,6 @@ function updateSlide() {
   textContainer.innerHTML = `
   <h2 class="slide-title">${slide.title}</h2>
   <p class="slide-body">${slide.body}</p>
-  <button class="apply-button fade-in-button">LEARN MORE</button>
 `;
 
   setTimeout(function () {

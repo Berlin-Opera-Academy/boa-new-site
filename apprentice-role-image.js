@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
           image.src = "media/admin-assistant-intern.jpg";
           break;
         case "set":
-          image.src = "media/lighting-apprentice.jpg";
+          image.src = "media/set-design-apprentice.jpg";
           break;
         default:
           image.src = "default-image.jpg";

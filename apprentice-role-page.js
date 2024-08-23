@@ -62,7 +62,7 @@ const roles = [
     title: "Set Design Assistant",
     description: "Description for Set Design Assistant.",
     responsibilities: "Responsibilities for Set Design Assistant.",
-    imagePath: "media/lighting-apprentice.jpg",
+    imagePath: "media/set-design-apprentice.jpg",
     hash: "#set",
   },
   // Add more roles as needed
