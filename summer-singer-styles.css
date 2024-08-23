@@ -1035,6 +1035,7 @@ em {
 .image-container {
   position: relative; /* Ensure the container is the reference point for absolute positioning */
   max-height: 375px;
+  box-shadow: 9px 13px 18px black;
 }
 
 .image-container::after {
