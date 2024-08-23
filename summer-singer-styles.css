@@ -411,6 +411,10 @@ body, html {
   }
 }
 
+#apply-form iframe{
+  width: 80%;
+}
+
 /*<!-- Panel Section -->*/
 
 .panel {
@@ -670,7 +674,6 @@ em {
   width: 100%;
 }
 
-
 #donor-info{
   background-image: url('media/flute-fire-berlin-opera-academy-apprentices-develop-your-career-in-opera-production-and-management-at-boa.JPG');
   background-size: cover;
@@ -913,6 +916,10 @@ em {
   .foreground .apply-button-container, 
   .gradient .panel-content .apply-button-container {
     align-self: center;
+  }
+
+  #apply-form iframe{
+    width: 100%;
   }
 
   .faq:first-of-type h1 {
