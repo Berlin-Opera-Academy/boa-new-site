@@ -986,6 +986,7 @@ em {
 
 .path-panel h2 {
   margin: 0 0 35px 0;
+  padding: 0;
   text-transform: uppercase;
   font-size: var(--secondary-font-size);
   font-family: 'HK Grotesk-Regular', sans-serif;
@@ -1075,6 +1076,7 @@ em {
   text-align: center;
   z-index: 3; /* Ensure this is higher than the ::after pseudo-element */
   position: relative;
+  width: 100%;
 }
 
 .image-link .title {
