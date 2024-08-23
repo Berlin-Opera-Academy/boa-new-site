@@ -198,13 +198,23 @@ body {
     font-size: 1.5em; /* adjust as needed */
   }
 
-  #align-left {
-    max-width: 100%;
+  #full-time-info {
+    background-image: url('media/flutezauberflötetitatic-nogradient.jpg') !important;
+    background-size: cover;
+    background-position: top;
+    height: 100%; /* Adjust height as needed */
+    width: 100%;
+    position: relative;
+    color: white; /* Text color */
+  }
+
+  #full-time-info #align-left {
+    max-width: 100% !important;
     padding: 0;
     margin: 0 !important;
   }
 
-  #align-left h1{
+  #full-time-info #align-left h1{
     width: 100%;
   }
 }
@@ -397,7 +407,7 @@ body, html {
 }
 
 #full-time-info {
-  background-image: url('media/flutezauberflötetitatic-nogradient.jpg');
+  background-image: url('media/flutezauberflötetitatic-crop.jpg');
     background-size: cover;
     background-position: top;
     height: 100%; /* Adjust height as needed */
