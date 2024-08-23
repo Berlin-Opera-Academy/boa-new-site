@@ -523,6 +523,10 @@ em {
   margin-bottom: 1em;
 }
 
+#apprentice-role-info img, #apprentice-roles img {
+  filter: grayscale(100%);
+}
+
 #apprentice-responsibilities ul, #apprentice-responsibilities li {
   list-style-type: disc;
 }
@@ -990,6 +994,10 @@ em {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   width: 100%; /* Add this line */
+}
+
+#summer-info .image-grid {
+  grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (max-width: 768px) {
