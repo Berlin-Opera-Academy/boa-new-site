@@ -246,7 +246,7 @@ body {
   }
   .apply-button {
     padding: 0.625em 1.5em; /* Adjust as needed */
-    font-size: 1em; /* Adjust as needed */
+    font-size: 1rem; /* Adjust as needed */
   }
 }
 
@@ -297,7 +297,7 @@ body {
 
 .apply-button {
   font-family: 'HK Grotesk-ExtraLight', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3rem;
   font-weight: 300;
   background: transparent;
   color: var(--secondary-color);
@@ -308,7 +308,7 @@ body {
 }
 
 .panel .apply-button {
-  font-size: 1em; /* Adjust as needed */
+  font-size: 1.3rem; /* Adjust as needed */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
@@ -524,6 +524,10 @@ em {
 
 #productions h1:last-of-type{
   margin-bottom: 1em;
+}
+
+#apprentice-responsibilities ul, #apprentice-responsibilities li {
+  list-style-type: disc;
 }
 
 .main-title {
@@ -1117,7 +1121,7 @@ em {
 }
 
 .panel .apply-button {
-  font-size: 1em; /* Adjust as needed */
+  font-size: 1.3rem; /* Adjust as needed */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
