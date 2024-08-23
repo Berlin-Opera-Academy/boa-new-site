@@ -406,7 +406,7 @@ body, html {
     color: white; /* Text color */
 }
 
-#align-left {
+#full-time-info #align-left {
   text-align: left;
   align-items: flex-start;
   justify-content: flex-start;
