@@ -63,7 +63,7 @@ body {
 
 @font-face {
   font-family: 'HK Italic';
-  src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-Italic.woff2') format('truetype');
+  src: url('assets/HKGrotesk_3001/WEB/HKGrotesk-ExtraLightItalic.woff2') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
@@ -1691,6 +1691,7 @@ a {
       -ms-transition: background-color 0.35s ease-in-out;
       transition: background-color 0.35s ease-in-out;
       -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
     }
 
     .carousel .forward:after, .carousel .backward:after, .forwardstaff:after, .backwardstaff:after {
