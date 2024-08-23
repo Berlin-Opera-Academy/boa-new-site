@@ -19,7 +19,7 @@ const roles = [
     title: "Assistant Director",
     description: "Description for Assistant Director.",
     responsibilities: "Responsibilities for Assistant Director.",
-    imagePath: "media/ad.jpg",
+    imagePath: "media/assistant-director-apprentice.jpg",
     hash: "#ad",
   },
   {
