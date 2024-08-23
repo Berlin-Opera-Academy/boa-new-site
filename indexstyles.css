@@ -7,7 +7,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   color: var(--secondary-color);
-  font-family: 'HK Grotesk', sans-serif; /* Change font to HK Grotesk */
+  font-family: 'HK Grotesk', sans-serif;
+  /* Change font to HK Grotesk */
 }
 
 :root {
@@ -20,7 +21,7 @@ body {
 @font-face {
   font-family: 'Euclid Flex';
   src: url('assets/EuclidFlex/EuclidFlex-Medium/fonts/EuclidFlex-Medium.woff2') format('woff2'),
-       url('assets/EuclidFlex/EuclidFlex-Medium/fonts/EuclidFlex-Medium.woff') format('woff');
+    url('assets/EuclidFlex/EuclidFlex-Medium/fonts/EuclidFlex-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -69,25 +70,29 @@ body {
 @font-face {
   font-family: 'Monserrat-Medium';
   src: url('assets/Montserrat/static/Montserrat-Medium.ttf') format('woff2');
-  font-weight:100;
+  font-weight: 100;
 }
 
 @font-face {
   font-family: 'Literata-Light';
   src: url('assets/Literata/static/Literata-Light.ttf') format('woff2');
-  font-weight:100;
+  font-weight: 100;
 }
 
 /* Hamburger Menu */
 .hamburger-menu {
   position: fixed;
-  top: 1.25em; /* 20px */
-  right: 1.25em; /* 20px */
+  top: 1.25em;
+  /* 20px */
+  right: 1.25em;
+  /* 20px */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2em; /* 32px */
-  height: 2em; /* 32px */
+  width: 2em;
+  /* 32px */
+  height: 2em;
+  /* 32px */
   background: transparent;
   border: none;
   cursor: pointer;
@@ -97,7 +102,8 @@ body {
 
 .hamburger-menu div {
   width: 2rem;
-  height: 0.25rem; /* Adjusted for visibility */
+  height: 0.25rem;
+  /* Adjusted for visibility */
   background: var(--secondary-color);
   border-radius: 10px;
   transition: all 0.3s linear;
@@ -144,10 +150,12 @@ body {
   color: var(--secondary-color);
   text-decoration: none;
   transition: color 0.3s linear;
-  
+
   /* Add your new styles here */
-  font-family: 'HK Grotesk-ExtraLight', sans-serif; /* Replace 'Your Font' with the name of your font */
-  line-height: 1.5; /* Adjust as needed */
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
+  /* Replace 'Your Font' with the name of your font */
+  line-height: 1.5;
+  /* Adjust as needed */
 }
 
 .nav-menu.active {
@@ -156,7 +164,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-    margin-right: 10px !important; /* Adjust as needed */
+    margin-right: 10px !important;
+    /* Adjust as needed */
   }
 }
 
@@ -172,7 +181,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Prevents spillover */
+  overflow: hidden;
+  /* Prevents spillover */
 }
 
 .header-content h2 {
@@ -195,17 +205,20 @@ body {
 
 @media screen and (max-width: 600px) {
   h2.subtitle {
-    font-size: 1.5em; /* adjust as needed */
+    font-size: 1.5em;
+    /* adjust as needed */
   }
 
   #full-time-info {
     background-image: url('media/flutezauberflötetitatic-nogradient.jpg') !important;
     background-size: cover;
     background-position: top;
-    height: 100%; /* Adjust height as needed */
+    height: 100%;
+    /* Adjust height as needed */
     width: 100%;
     position: relative;
-    color: white; /* Text color */
+    color: white;
+    /* Text color */
   }
 
   #full-time-info #align-left {
@@ -214,7 +227,7 @@ body {
     margin: 0 !important;
   }
 
-  #full-time-info #align-left h1{
+  #full-time-info #align-left h1 {
     width: 100%;
   }
 }
@@ -223,8 +236,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%; /* Change this */
-  height: 100%; /* Change this */
+  width: 100%;
+  /* Change this */
+  height: 100%;
+  /* Change this */
   z-index: -1;
   transform: translate(-50%, -50%);
   object-fit: cover;
@@ -233,18 +248,27 @@ body {
 
 @media screen and (max-width: 600px) {
   #header-video {
-    width: 100%; /* Set width to 100% */
-    height: auto; /* Set height to auto */
+    width: 100%;
+    /* Set width to 100% */
+    height: auto;
+    /* Set height to auto */
   }
+
   .header-content h2 {
-    font-size: 1.5em; /* Adjust as needed */
+    font-size: 1.5em;
+    /* Adjust as needed */
   }
+
   .header-content h3 {
-    font-size: 1.2em; /* Adjust as needed */
+    font-size: 1.2em;
+    /* Adjust as needed */
   }
+
   .apply-button {
-    padding: 0.625em 1.5em; /* Adjust as needed */
-    font-size: 1em; /* Adjust as needed */
+    padding: 0.625em 1.5em;
+    /* Adjust as needed */
+    font-size: 1em;
+    /* Adjust as needed */
   }
 }
 
@@ -254,17 +278,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* This makes the container take up the full height of the viewport */
-    padding: 0 20px; /* Add horizontal padding */
+    height: 100vh;
+    /* This makes the container take up the full height of the viewport */
+    padding: 0 20px;
+    /* Add horizontal padding */
   }
+
   h1.title.content-title {
-    font-size: 2em !important; /* adjust as needed */
+    font-size: 2em !important;
+    /* adjust as needed */
   }
 }
 
 @media screen and (max-width: 600px) {
   h1.title.content-title {
-    font-size: 2em !important; /* adjust as needed */
+    font-size: 2em !important;
+    /* adjust as needed */
   }
 }
 
@@ -287,16 +316,19 @@ body {
   border: 0.0625em solid var(--secondary-color);
   padding: 0.625em 2.375em;
   cursor: pointer;
-  transition: transform 0.5s ease-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* adjust as needed */
+  transition: transform 0.5s ease-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  /* adjust as needed */
 }
 
 .panel .apply-button {
-  font-size: 1em; /* Adjust as needed */
+  font-size: 1em;
+  /* Adjust as needed */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .apply-button:hover {
-  transform: scale(1.1); /* adjust as needed */
+  transform: scale(1.1);
+  /* adjust as needed */
   color: hotpink;
   border-color: hotpink;
 }
@@ -305,14 +337,17 @@ background-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%; /* Change this */
-  height: 100%; /* Change this */
+  width: 100%;
+  /* Change this */
+  height: 100%;
+  /* Change this */
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -321,7 +356,8 @@ body, html {
 .video-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* This will make the container take up the full height of the viewport */
+  height: 100vh;
+  /* This will make the container take up the full height of the viewport */
   overflow: hidden;
 }
 
@@ -337,11 +373,13 @@ body, html {
 /* New media query for mobile devices */
 @media screen and (max-width: 600px) {
   .header-content {
-    height: 75vh; /* Adjust as needed for mobile */
+    height: 75vh;
+    /* Adjust as needed for mobile */
   }
 
   .video-container {
-    height: 75vh; /* Adjust as needed for mobile */
+    height: 75vh;
+    /* Adjust as needed for mobile */
   }
 }
 
@@ -408,12 +446,14 @@ body, html {
 
 #full-time-info {
   background-image: url('media/flutezauberflötetitatic-crop.jpg');
-    background-size: cover;
-    background-position: top;
-    height: 100%; /* Adjust height as needed */
-    width: 100%;
-    position: relative;
-    color: white; /* Text color */
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  /* Adjust height as needed */
+  width: 100%;
+  position: relative;
+  color: white;
+  /* Text color */
 }
 
 #full-time-info #align-left {
@@ -423,9 +463,11 @@ body, html {
   max-width: 50%;
 }
 
-#full-time-info .half-flex, #full-time-info .panel-content {
+#full-time-info .half-flex,
+#full-time-info .panel-content {
   display: flex;
-  align-items: stretch; /* Ensure children stretch to fill the container's height */
+  align-items: stretch;
+  /* Ensure children stretch to fill the container's height */
   max-width: 100%;
 }
 
@@ -461,7 +503,8 @@ body, html {
   width: 100%;
   height: 100%;
   background: linear-gradient(to left, transparent 10%, black 100%);
-  pointer-events: none; /* Ensure the pseudo-element does not interfere with user interactions */
+  pointer-events: none;
+  /* Ensure the pseudo-element does not interfere with user interactions */
   z-index: -1;
 }
 
@@ -472,7 +515,9 @@ body, html {
   gap: 25px;
 }
 
-#full-time-info.gradient .panel-content h3, #full-time-info.gradient .panel-content h1, #full-time-info.gradient .panel-content p  {
+#full-time-info.gradient .panel-content h3,
+#full-time-info.gradient .panel-content h1,
+#full-time-info.gradient .panel-content p {
   margin: 0;
   padding: 0;
 }
@@ -490,26 +535,38 @@ body, html {
   list-style: disc;
 }
 
+.button-container {
+  display: flex;
+  gap: 20px;
+  width: 80vw;
+}
+
 
 /* Style for screens smaller than 600px */
 @media screen and (max-width: 600px) {
   .title {
     font-size: 2em;
   }
-}
 
-.apply-button {
-  min-width: 100px; /* Adjust as needed */
-  white-space: nowrap; /* Prevents the text from wrapping */
-}
+  .apply-button {
+    min-width: 100px;
+    /* Adjust as needed */
+    white-space: nowrap;
+    /* Prevents the text from wrapping */
+  }
 
-@media screen and (max-width: 600px) {
+  .button-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+
   .apply-button-container {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
   }
 }
+
 
 /* Path Selection Section */
 
@@ -525,6 +582,7 @@ body, html {
 
 .path-panel h2 {
   margin: 0 0 35px 0;
+  padding: 0;
   text-transform: uppercase;
   font-size: var(--secondary-font-size);
   font-family: 'HK Grotesk-Regular', sans-serif;
@@ -535,7 +593,8 @@ body, html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
-  width: 100%; /* Add this line */
+  width: 100%;
+  /* Add this line */
   margin-top: 20px;
 }
 
@@ -601,12 +660,14 @@ body, html {
 /* Style for the image container */
 .image-container {
   /* Existing styles */
-  transition: opacity 0.3s ease; /* This makes the opacity change smoothly */
+  transition: opacity 0.3s ease;
+  /* This makes the opacity change smoothly */
 }
 
 /* Style for the image container when it's hovered over */
 .image-container:hover {
-  opacity: 0.7; /* Adjust as needed */
+  opacity: 0.7;
+  /* Adjust as needed */
 }
 
 /* Existing styles */
@@ -614,67 +675,89 @@ body, html {
 
 .image-container {
   position: relative;
-  width: 100%; /* This makes each image take up the full width of the grid cell */
-  transition: opacity 0.3s ease; /* This makes the opacity change smoothly */
+  width: 100%;
+  /* This makes each image take up the full width of the grid cell */
+  transition: opacity 0.3s ease;
+  /* This makes the opacity change smoothly */
   box-shadow: 0px 11px 10px black;
 }
 
 /* New media query for smaller screens */
 @media screen and (max-width: 600px) {
   .image-grid {
-    grid-template-columns: 1fr; /* 1 column on smaller screens */
+    grid-template-columns: 1fr;
+    /* 1 column on smaller screens */
   }
 }
+
 /* Who We Are Section -----------------------------------------*/
 .who-we-are-panel {
   height: auto;
   margin: 0;
   display: flex;
   justify-content: space-between;
-  background-color: black; /* Preserve original color */
-  color: var(--secondary-color); /* Preserve original color */
+  background-color: black;
+  /* Preserve original color */
+  color: var(--secondary-color);
+  /* Preserve original color */
   border: none;
   padding: 0;
 }
+
 .who-we-are-panel .text-container {
-  flex: 0 0 calc(38.2% - 1.25em); /* Subtract the total horizontal margin */
+  flex: 0 0 calc(38.2% - 1.25em);
+  /* Subtract the total horizontal margin */
   margin: 0.625em;
-  box-sizing: border-box; 
-  color: var(--secondary-color); /* Preserve original color */
-  padding-left: 1em; /* Add this line to adjust the indent */
+  box-sizing: border-box;
+  color: var(--secondary-color);
+  /* Preserve original color */
+  padding-left: 1em;
+  /* Add this line to adjust the indent */
   font-family: 'HK Grotesk-ExtraLight', sans-serif;
-  font-size: 1.25em; 
-  padding-left: 50px; /* Adjust as needed */
-  padding-top: 50px; /* Adjust as needed */
-  padding-bottom:50px;
-  padding-right:50px;
+  font-size: 1.25em;
+  padding-left: 50px;
+  /* Adjust as needed */
+  padding-top: 50px;
+  /* Adjust as needed */
+  padding-bottom: 50px;
+  padding-right: 50px;
   margin: 0.625em;
-  overflow: auto; /* Add a scrollbar if the content is too large */
-  max-height: 100%; /* Limit the height */
+  overflow: auto;
+  /* Add a scrollbar if the content is too large */
+  max-height: 100%;
+  /* Limit the height */
 }
 
 .who-we-are-panel .text-container .apply-button {
-  width: auto; /* Let the button size itself based on its content */
-  padding: 20px; /* Adjust as needed */
-  margin: 0; /* Remove any margin */
-  position: relative; /* Position the button relative to its container */
-  transition: transform 0.5s ease-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* adjust as needed */
+  width: auto;
+  /* Let the button size itself based on its content */
+  padding: 20px;
+  /* Adjust as needed */
+  margin: 0;
+  /* Remove any margin */
+  position: relative;
+  /* Position the button relative to its container */
+  transition: transform 0.5s ease-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  /* adjust as needed */
 }
 
 .panel .apply-button {
-  font-size: 1em; /* Adjust as needed */
+  font-size: 1em;
+  /* Adjust as needed */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .apply-button:hover {
-  transform: scale(1.1); /* adjust as needed */
+  transform: scale(1.1);
+  /* adjust as needed */
   color: hotpink;
   border-color: hotpink;
 }
 
 @media screen and (min-width: 601px) and (max-width: 980px) {
   .who-we-are-panel .text-container {
-    margin: 0.3125em; /* Adjust as needed */
+    margin: 0.3125em;
+    /* Adjust as needed */
   }
 }
 
@@ -685,41 +768,52 @@ body, html {
     padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 2em;
-    margin: 0; /* Remove the margin */
+    margin: 0;
+    /* Remove the margin */
   }
 
   .who-we-are-panel .image-container {
-    flex: 0 0 calc(70% - 1.25em); /* Increase the flex basis */
+    flex: 0 0 calc(70% - 1.25em);
+    /* Increase the flex basis */
     height: 100%;
   }
 }
 
 .who-we-are-panel .image-container img {
   width: 100%;
-  height: 100%; /* Change this line */
+  height: 100%;
+  /* Change this line */
   object-fit: cover;
 }
 
 
 /* New media query for iPad screen sizes */
-@media screen and (min-width: 601px) and (max-width: 1024px) { /* iPad screen sizes */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* iPad screen sizes */
   .who-we-are-panel .text-container .button-class-name {
-    padding-right: 10px; /* Reduce the right padding */
-    margin-right: 10px; /* Reduce the right margin */
+    padding-right: 10px;
+    /* Reduce the right padding */
+    margin-right: 10px;
+    /* Reduce the right margin */
   }
 }
 
 @media screen and (min-width: 601px) {
   .who-we-are-panel .image-container {
-    flex: 0 0 calc(61.8% - 1.25em); /* Subtract the total horizontal margin */
+    flex: 0 0 calc(61.8% - 1.25em);
+    /* Subtract the total horizontal margin */
   }
 }
 
 @media screen and (max-width: 600px) {
   .who-we-are-panel .image-container {
-    flex: 0 0 calc(90% - 1.25em); /* Increase the flex basis */
-    max-width: 100%; /* Limit the width */
-    height: auto; /* Maintain the aspect ratio */
+    flex: 0 0 calc(90% - 1.25em);
+    /* Increase the flex basis */
+    max-width: 100%;
+    /* Limit the width */
+    height: auto;
+    /* Maintain the aspect ratio */
   }
 }
 
@@ -740,9 +834,12 @@ body, html {
   .who-we-are-panel .text-container .apply-button {
     display: block;
     margin: auto;
-    font-size: 17px; /* adjust as needed */
-  padding: 10px 20px; /* adjust as needed */
-  width: auto; /* adjust as needed */
+    font-size: 17px;
+    /* adjust as needed */
+    padding: 10px 20px;
+    /* adjust as needed */
+    width: auto;
+    /* adjust as needed */
   }
 }
 
@@ -759,9 +856,11 @@ body, html {
 }
 
 .who-we-are-panel .image-container {
-  flex: 0 0 calc(61.8% - 1.25em); /* Subtract the total horizontal margin */
+  flex: 0 0 calc(61.8% - 1.25em);
+  /* Subtract the total horizontal margin */
   height: 100%;
 }
+
 .who-we-are-panel .image-container img {
   width: 100%;
   height: 100%;
@@ -776,8 +875,10 @@ body, html {
 
 .slide-body {
   font-family: 'HK Grotesk-ExtraLight', sans-serif;
-  font-size: 1em; /* Change this to your desired font size */
+  font-size: 1em;
+  /* Change this to your desired font size */
 }
+
 .fade-in {
   opacity: 1;
   transition: opacity 1s;
@@ -814,38 +915,52 @@ fade-in-button {
 
 /* This styles the links in the Join Us section. */
 .join-us-panel a {
-  color: var(--secondary-color); /* Sets the link color to the secondary color defined elsewhere in your CSS. */
-  text-decoration: none; /* Removes the underline from the links. */
+  color: var(--secondary-color);
+  /* Sets the link color to the secondary color defined elsewhere in your CSS. */
+  text-decoration: none;
+  /* Removes the underline from the links. */
 }
 
 /* This styles the grid that contains the categories in the Join Us section. */
 .category-grid {
-  display: grid; /* Makes the container a grid container. */
-  grid-template-columns: repeat(4, 1fr); /* Creates a grid with 4 equal-width columns. */
-  gap: 1.25em; /* Sets the gap between grid items to 1.25em. */
+  display: grid;
+  /* Makes the container a grid container. */
+  grid-template-columns: repeat(4, 1fr);
+  /* Creates a grid with 4 equal-width columns. */
+  gap: 1.25em;
+  /* Sets the gap between grid items to 1.25em. */
 }
 
 @media screen and (max-width: 600px) {
   .category-grid {
-    grid-template-columns: 1fr; /* 1 column on smaller screens */
+    grid-template-columns: 1fr;
+    /* 1 column on smaller screens */
   }
 }
 
 .category-grid {
-  display: grid; /* Makes the container a grid container. */
-  grid-template-columns: repeat(4, 1fr); /* Creates a grid with 4 equal-width columns. */
-  gap: 1.25em; /* Sets the gap between grid items to 1.25em. */
+  display: grid;
+  /* Makes the container a grid container. */
+  grid-template-columns: repeat(4, 1fr);
+  /* Creates a grid with 4 equal-width columns. */
+  gap: 1.25em;
+  /* Sets the gap between grid items to 1.25em. */
 }
 
 /* Join Us Section */
 
 /* This styles the main container of the Join Us section. */
 .join-us-panel {
-  background-color: rgba(27, 31, 36, 1); /* Sets the background color to a darker slate grey. */
-  color: var(--secondary-color); /* Sets the text color to the secondary color defined elsewhere in your CSS. */
-  padding: 0.5em 1.25em 1em; /* Reduced padding */
-  text-align: center; /* Centers the text horizontally. */
-  font-size: 1.5em; /* Sets the font size to 1.5 times the base font size. */
+  background-color: rgba(27, 31, 36, 1);
+  /* Sets the background color to a darker slate grey. */
+  color: var(--secondary-color);
+  /* Sets the text color to the secondary color defined elsewhere in your CSS. */
+  padding: 0.5em 1.25em 1em;
+  /* Reduced padding */
+  text-align: center;
+  /* Centers the text horizontally. */
+  font-size: 1.5em;
+  /* Sets the font size to 1.5 times the base font size. */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -855,18 +970,24 @@ fade-in-button {
 
 /* This styles the links in the Join Us section. */
 .join-us-panel a {
-  color: var(--secondary-color); /* Sets the link color to the secondary color defined elsewhere in your CSS. */
-  text-decoration: none; /* Removes the underline from the links. */
+  color: var(--secondary-color);
+  /* Sets the link color to the secondary color defined elsewhere in your CSS. */
+  text-decoration: none;
+  /* Removes the underline from the links. */
 }
 
 /* This styles the grid that contains the categories in the Join Us section. */
 .category-grid {
-  display: grid; /* Makes the container a grid container. */
-  grid-template-columns: repeat(4, 1fr); /* Creates a grid with 4 equal-width columns. */
-  gap: 1.25em; /* Sets the gap between grid items to 1.25em. */
+  display: grid;
+  /* Makes the container a grid container. */
+  grid-template-columns: repeat(4, 1fr);
+  /* Creates a grid with 4 equal-width columns. */
+  gap: 1.25em;
+  /* Sets the gap between grid items to 1.25em. */
   flex-direction: column;
   align-items: center;
-  gap: 1.25em; /* Sets the gap between items to 1.25em */
+  gap: 1.25em;
+  /* Sets the gap between items to 1.25em */
 }
 
 /* Style for the "JOIN US" text */
@@ -882,20 +1003,25 @@ fade-in-button {
 /* Media query for larger screens */
 @media screen and (min-width: 601px) {
   .join-us-panel {
-    padding: 0 0 30px 0 !important; /* Adjust the padding as needed */
+    padding: 0 0 30px 0 !important;
+    /* Adjust the padding as needed */
   }
 }
 
 /* New media query for smaller screens */
 @media screen and (max-width: 600px) {
   .join-us-panel {
-    padding: 0 0 30px 0 !important; /* Adds 10px of padding to the bottom */
-    height: auto; /* Sets the height to fit the content */
-    font-size: 18px; /* adjust as needed */
+    padding: 0 0 30px 0 !important;
+    /* Adds 10px of padding to the bottom */
+    height: auto;
+    /* Sets the height to fit the content */
+    font-size: 18px;
+    /* adjust as needed */
   }
 
   .category-grid {
-    grid-template-columns: 1fr; /* 1 column on smaller screens */
+    grid-template-columns: 1fr;
+    /* 1 column on smaller screens */
   }
 }
 
@@ -913,7 +1039,7 @@ fade-in-button {
   font-family: 'HK Grotesk-ExtraLight', sans-serif;
   max-height: 400px;
   background-size: 100% auto;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -922,7 +1048,8 @@ fade-in-button {
   background-position: center;
   background-size: contain;
 
-  line-height: 0.2; /* Adjust this value to decrease or increase line spacing */
+  line-height: 0.2;
+  /* Adjust this value to decrease or increase line spacing */
 }
 
 .footer-image {
@@ -931,7 +1058,8 @@ fade-in-button {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Change to 'cover' or remove this line */
+  object-fit: cover;
+  /* Change to 'cover' or remove this line */
   z-index: -1;
 }
 
@@ -958,7 +1086,7 @@ fade-in-button {
     padding: 5%;
   }
 
-  .info-container{
+  .info-container {
     max-width: 99% !important;
     width: 99% !important;
     margin: auto;
@@ -993,18 +1121,22 @@ fade-in-button {
 /* New media query for mobile devices */
 @media screen and (max-width: 600px) {
   .footer-image {
-    height: auto; /* Adjust as needed for mobile */
+    height: auto;
+    /* Adjust as needed for mobile */
   }
 }
 
 .footer-logo {
-  width: 100px !important; /* Adjust as needed */
-  height: auto; /* Keeps the aspect ratio */
+  width: 100px !important;
+  /* Adjust as needed */
+  height: auto;
+  /* Keeps the aspect ratio */
 }
 
 @media screen and (max-width: 600px) {
   .footer-logo {
-    width: 50px !important; /* Adjust as needed */
+    width: 50px !important;
+    /* Adjust as needed */
   }
 }
 
@@ -1014,7 +1146,7 @@ fade-in-button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 0.625em;
   box-sizing: border-box;
   flex: 1;
@@ -1056,7 +1188,7 @@ fade-in-button {
   }
 }
 
-.info-container a{
+.info-container a {
   color: var(--secondary-color);
   text-decoration: none;
 }
@@ -1075,11 +1207,15 @@ fade-in-button {
 
 .header-logo {
   position: absolute;
-  top: 10px; /* adjust as needed */
-  left: 10px; /* adjust as needed */
+  top: 10px;
+  /* adjust as needed */
+  left: 10px;
+  /* adjust as needed */
   color: white;
-  font-size: 20px; /* adjust as needed */
-  font-weight: bold; /* adjust as needed */
+  font-size: 20px;
+  /* adjust as needed */
+  font-weight: bold;
+  /* adjust as needed */
   font-family: 'Euclid Flex Medium', sans-serif;
   letter-spacing: 2px;
   opacity: 0.9;
@@ -1087,28 +1223,35 @@ fade-in-button {
 }
 
 .header-logo a {
-  color: inherit; /* make the link color the same as the parent */
-  text-decoration: none; /* remove underline */
-  transition: color 0.3s ease, transform 0.3s ease; /* add this line */
+  color: inherit;
+  /* make the link color the same as the parent */
+  text-decoration: none;
+  /* remove underline */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* add this line */
 }
 
 .header-logo a:hover {
-  color: hotpink; /* change color on hover */
-  transform: scale(1.1); /* add swell effect on hover */
+  color: hotpink;
+  /* change color on hover */
+  transform: scale(1.1);
+  /* add swell effect on hover */
 }
 
 .header-impressum {
   background-image: url('media/best-summer-opera-program-europe.jpg');
   background-size: cover;
   position: relative;
-  height: 400px; /* adjust this value as needed */
+  height: 400px;
+  /* adjust this value as needed */
 }
 
 .header-employment {
   background-image: url('media/opera-singing-germany-theater-jobs.jpg');
   background-size: cover;
   position: relative;
-  height: 50vh; /* adjust as needed */
+  height: 50vh;
+  /* adjust as needed */
   background-position: center 20%;
 }
 
@@ -1127,20 +1270,25 @@ fade-in-button {
 
 @media screen and (max-width: 600px) {
   .background-image-title {
-    font-size: 50px; /* adjust as needed */
+    font-size: 50px;
+    /* adjust as needed */
   }
 }
 
 h2 {
-  font-family: 'Literata-Light', sans-serif; /* replace with your font */
-  font-size: 20px; /* adjust as needed */
+  font-family: 'Literata-Light', sans-serif;
+  /* replace with your font */
+  font-size: 20px;
+  /* adjust as needed */
   padding-top: 50px;
-  margin-top: 0; /* add this line */
+  margin-top: 0;
+  /* add this line */
 }
 
 .text-block {
   padding: 20px;
-  padding-left: 40px; /* adjust as needed */
+  padding-left: 40px;
+  /* adjust as needed */
   padding-bottom: 50px;
   font-size: 16px;
   line-height: 1.5;
@@ -1148,7 +1296,8 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .text-block {
-    padding-left: 20px; /* adjust as needed */
+    padding-left: 20px;
+    /* adjust as needed */
   }
 }
 
@@ -1161,24 +1310,31 @@ main {
   background-color: black;
   color: white;
   font-family: 'HK Grotesk-ExtraLight', sans-serif;
-  padding-left: 60px; /* adjust this value as needed */
+  padding-left: 60px;
+  /* adjust this value as needed */
 }
 
 a {
   color: white;
-  text-decoration: none; /* optional, removes the underline */
+  text-decoration: none;
+  /* optional, removes the underline */
 }
 
 .special-link {
-  border: 1px solid white; /* adjust as needed */
-  padding: 5px; /* adjust as needed */
-  text-decoration: none; /* remove underline */
-  color: white; /* adjust as needed */
+  border: 1px solid white;
+  /* adjust as needed */
+  padding: 5px;
+  /* adjust as needed */
+  text-decoration: none;
+  /* remove underline */
+  color: white;
+  /* adjust as needed */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .special-link:hover {
-  transform: scale(1.1); /* adjust as needed */
+  transform: scale(1.1);
+  /* adjust as needed */
   color: hotpink;
   border-color: hotpink;
 }
