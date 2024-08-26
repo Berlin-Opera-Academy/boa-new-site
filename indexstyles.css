@@ -285,14 +285,14 @@ body {
   }
 
   h1.title.content-title {
-    font-size: 2em !important;
+    font-size: 3em !important;
     /* adjust as needed */
   }
 }
 
 @media screen and (max-width: 600px) {
   h1.title.content-title {
-    font-size: 2em !important;
+    font-size: 3em !important;
     /* adjust as needed */
   }
 }
