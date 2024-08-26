@@ -117,7 +117,7 @@ body {
   /* adjust as needed */
   font-weight: bold;
   /* adjust as needed */
-  font-family: 'Euclid Flex Medium', sans-serif;
+  font-family: 'Euclid Flex', sans-serif;
   letter-spacing: 2px;
   opacity: 0.9;
   z-index: 10;
@@ -194,7 +194,7 @@ body {
   transition: transform 0.3s ease-in-out;
   z-index: 9;
   width: auto;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .nav-menu a {
