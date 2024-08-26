@@ -106,6 +106,39 @@ body {
   z-index: 10; /* Remove the z-index property */
 }
 
+.header-logo {
+  position: absolute;
+  top: 10px;
+  /* adjust as needed */
+  left: 10px;
+  /* adjust as needed */
+  color: white;
+  font-size: 20px;
+  /* adjust as needed */
+  font-weight: bold;
+  /* adjust as needed */
+  font-family: 'Euclid Flex Medium', sans-serif;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.header-logo a {
+  color: inherit;
+  /* make the link color the same as the parent */
+  text-decoration: none;
+  /* remove underline */
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* add this line */
+}
+
+.header-logo a:hover {
+  color: hotpink;
+  /* change color on hover */
+  transform: scale(1.1);
+  /* add swell effect on hover */
+}
+
 /* Hamburger Menu */
 .hamburger-menu {
   position: fixed;
