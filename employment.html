@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Employment</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="indexstyles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berlin Opera Academy - Summer Apprentices</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+  <link rel="stylesheet" href="summer-singer-styles.css" />
+  <script src="jquery.min.js"></script>
+  <script src="jquery.dropotron.min.js"></script>
+  <script src="jquery.scrolly.min.js"></script>
+  <script src="jquery.onvisible.min.js"></script>
+  <script src="skel.min.js"></script>
+  <script src="util.js"></script>
+  <script src="old-main.js"></script>
   <!-- Global site tag (gtag.js) - Google Ads: 929562518 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-929562518"></script>
   <script>
@@ -25,7 +34,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -42,10 +51,6 @@
 </head>
 
 <body>
-  <header class="header-employment">
-    <div class="background-image-panel">
-      <h1 class="background-image-title"><b>EMPLOYMENT //</b></h1>
-  </header>
   <div class="header-logo">
     <a href="index.html">BERLIN OPERA ACADEMY</a>
   </div>
@@ -66,36 +71,82 @@
     <a href="apprentices.html">APPRENTICES</a>
     <a href="faqs.html">FAQ</a>
   </nav>
-  </header>
 
-  <main>
-    <h2 class="subheading">Join the BOA Team as one of the following:</h2>
-    <div class="text-block">
-      <p>Administrative Assistant</p>
-      <p>Production Runner</p>
-      <p>Event Staff</p>
-      <p>Director</p>
-      <p>Conductor</p>
-      <p>Coach</p>
-      <p>Choreography and/or Movement Instructor</p>
-      <p>Lighting Director</p>
-      <p>Costumer</p>
-      <p>Academy Leadership</p>
-      <br>
-      <p>
-        To apply please fill out the application form below for potential employment with BOA or SOA. We look forward to
-        considering your application.
-      </p>
-      <center>
-        <a class="special-link"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSf707irUynhr50WVGcXQJLtTrta8kIMIpMcf3oPyXVKOjUAWA/viewform?usp=sf_link">BOA
-          and SOA Employment Application Form</a>
-      </center>
-
-
+  <!-- Background image Section -->
+  <section class="header">
+    <div class="header-img-container">
+      <img class="background-img"
+        src="media/opera-singing-germany-theater-jobs.jpg"
+        alt="EMPLOYMENT" 
+        style="object-position: top;"/>
     </div>
-  </main>
+    <div class="content">
+      <h1 class="title content-title">EMPLOYMENT //</h1>
+    </div>
+  </section>
 
+  <!-- Panel Section -->
+  <section>
+    <div class="panel">
+      <div class="half-flex">
+        <div class="panel-content" id="align-left">
+          <h1 class="HK-Bold">
+            Make a difference with BOA
+          </h1>
+        </div>
+        <div class="panel-content" id="align-left">
+          <h3>
+          <em>Come to Berlin and help bring the best opera intensive to life by joining our dedicated staff.</em>
+          </h3>
+          <div class="apply-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf707irUynhr50WVGcXQJLtTrta8kIMIpMcf3oPyXVKOjUAWA/viewform"><button class="apply-button">APPLY NOW</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apprentice-roles">
+    <div class="panel">
+      <div class="half-flex">
+        <div class="panel-content" id="align-left">
+          <h1>Join the BOA Team as one of the following:</h1>
+          <ul>
+            <li class="apprentice-role">Administrative Assistant</li>
+            <li class="apprentice-role">Production Runner</li>
+            <li class="apprentice-role">Event Staff</li>
+            <li class="apprentice-role">Director</li>
+            <li class="apprentice-role">Conductor</li>
+            <li class="apprentice-role">Coach</li>
+            <li class="apprentice-role">Choreographer/Movement Instructor</li>
+            <li class="apprentice-role">Lighting Director</li>
+            <li class="apprentice-role">Costumer</li>
+            <li class="apprentice-role">Academy Leadership</li>
+          </ul>
+          <p>To apply, please fill out the application form below for potential employment with BOA or SOA. We look forward to considering your application.</p>      
+          <div class="apply-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf707irUynhr50WVGcXQJLtTrta8kIMIpMcf3oPyXVKOjUAWA/viewform"><button class="apply-button">APPLY HERE</button></a>
+          </div>
+        </div>
+        <div class="panel-image">
+          <img src="media/yvette-Chicago-summer-opera-cropped.jpg" alt="image">
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Us Section -->
+  <section>
+    <div class="join-us-panel">
+      <h2>JOIN US</h2>
+      <div class="category-grid">
+        <a href="singers-summer.html" class="category-link">SINGERS // SUMMER</a>
+        <a href="singers-full-time.html" class="category-link">SINGERS // FULL-TIME</a>
+        <a href="orchestra.html" class="category-link">ORCHESTRA</a>
+        <a href="apprentices.html" class="category-link">APPRENTICES</a>
+      </div>
+    </div>
+  </section>
   <!-- Footer Section -->
   <footer>
     <div class="footer-panel">
@@ -111,7 +162,7 @@
           <a href="https://www.tiktok.com/yourpage"><img src="media/tiktok-icon.png" alt="TikTok"></a>
           <a href="https://www.youtube.com/yourchannel"><img src="media/youtube-icon.png" alt="YouTube"></a>
         </div>
-        <a class="block-link" href="impressum.html">Impressum</a>
+        <a href="impressum.html">Impressum</a>
         <a class="block-link" href="employment.html">Employment</a>
         <a class="block-link" href="faqs.html">FAQs</a>
         <a class="block-link" href="donors.html">Donors</a>
@@ -120,9 +171,8 @@
       </div>
     </div>
   </footer>
-  <script src="main.js"></script>
+
   <script src="hamburger-menu.js"></script>
-</body>
 </body>
 
 </html>
