@@ -1042,10 +1042,6 @@ em {
   max-width: 40vw;
 }
 
-#full-time-info-images .image-grid{
-  margin-top: 1em;
-}
-
 @media screen and (max-width: 768px) {
   .image-grid {
     grid-template-columns: repeat(2, 1fr);
