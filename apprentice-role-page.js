@@ -134,7 +134,7 @@ const roles = [
     ],
     additional:
       "The experience will be tailored to your specific skills and interests. At BOA, we want to help you grow in your areas of strength, assist with weaknesses, and provide employment opportunities in the field.",
-    imagePath: "media-admin-assistant-intern.jpg",
+    imagePath: "media/admin-assistant-intern.jpg",
     hash: "#admin",
   },
   {
