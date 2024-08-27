@@ -282,6 +282,10 @@ body {
     padding: 0.625em 1.5em; /* Adjust as needed */
     font-size: 1rem; /* Adjust as needed */
   }
+
+  .header-logo {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 1024px) {
