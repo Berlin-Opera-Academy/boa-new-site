@@ -1671,7 +1671,11 @@ main {
   background-color: black;
   color: white;
   font-family: 'HK Grotesk-ExtraLight', sans-serif;
-  padding-left: 60px; /* adjust this value as needed */
+  padding: 40px; /* adjust this value as needed */
+}
+
+main a {
+  text-decoration: underline;
 }
 
 a {
