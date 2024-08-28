@@ -1034,17 +1034,99 @@ em {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  gap: 20px;
   width: 100%; /* Add this line */
 }
 
-#summer-info .image-grid {
+#summer-info .info-grid {
+  display: grid;
+  column-gap: 20px;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
-#summer-info .image-container {
-  max-width: 40vw;
+#summer-info .info-wrapper {
+  display: grid;
+  max-width: 600px;
+  grid-template-rows: 6fr 1fr;
+  width: 100%;
 }
+
+#summer-info .info-footer {
+  background-color: white;
+}
+
+#summer-info #performance-info {
+  background-image: url('media/summer-singers-info-card-background-1.jpg');
+}
+
+#summer-info #practical-info {
+  background-image: url('media/summer-singers-info-card-background-2.jpg');
+}
+
+/* #summer-info #practical-info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black, transparent);
+  pointer-events: none; 
+  z-index: 1;
+} */
+
+#summer-info .info-content {
+  background-size: cover;
+  background-position: center;
+  height: 100%; /* Adjust height as needed */
+  width: 100%;
+  position: relative;
+  color: white; /* Text color */
+}
+
+#summer-info .info-content li {
+  font-family: 'HK Grotesk-ExtraLight', sans-serif;
+  margin: 1.2rem 0;
+  text-align: left;
+  list-style-type: square;
+  font-size: .8em;
+}
+
+/* #summer-info .info-content li::marker {
+  content: "■   ";
+  font-size: 0.75em;
+} */
+
+#summer-info .info-content ul {
+  margin: 2rem 0 4rem 0;
+}
+
+#summer-info .info-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#summer-info .info-footer h1 {
+  margin: 0 0 0 1rem;
+  color: black;
+  font-family: "HK Bold";
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 600px) {
+  #summer-info .info-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  #summer-info .info-footer h1 {
+    font-size: .8em;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .image-grid {
