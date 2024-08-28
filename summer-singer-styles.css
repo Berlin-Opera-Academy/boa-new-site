@@ -569,6 +569,25 @@ em {
   list-style-type: disc;
 }
 
+#faculty-panel, #apprentice-role-info {
+  margin-top: 4rem;
+}
+
+#faculty-panel p {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#faculty-panel a {
+  text-decoration: underline;
+}
+
+#faculty-panel .panel-content, #faculty-panel .panel-content p {
+  margin-bottom: 0;
+}
+
 .main-title {
   font-size: 1em;
 }
