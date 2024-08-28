@@ -104,10 +104,11 @@ function appendLinks(links) {
 
 // Load the appropriate role based on the URL hash
 function loadRoleFromHash() {
-  const hash = window.location.hash.substring(1);
-  const index = parseInt(hash, 10);
-  if (!isNaN(index) && index >= 0 && index < faculty.length) {
-    currentIndex = index;
+  const hash = window.location.hash;
+  console.log(hash);
+
+  for (let i = 0; i < faculty.length; i++) {
+    if (hash === faculty[i].hash) updateContent(currentIndex);
+    currentIndex++;
   }
-  updateContent(currentIndex);
 }
