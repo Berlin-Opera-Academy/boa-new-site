@@ -1072,7 +1072,7 @@ em {
 
 #summer-info .info-wrapper {
   display: grid;
-  max-width: 600px;
+  max-width: 500px;
   grid-template-rows: 6fr 1fr;
   width: 100%;
 }
@@ -1082,11 +1082,11 @@ em {
 }
 
 #summer-info #performance-info {
-  background-image: url('media/BOA-Opernfest2024_Le-nozze-di-Figaro1-9Aug24_(c)Opernfotografie-DetlefKurth_DSC00065-flipped.jpg');
+  background-image: url('media/BOA-Opernfest2024_Le-nozze-di-Figaro1-9Aug24_(c)Opernfotografie-DetlefKurth_DSC00065-crop.jpg');
 }
 
 #summer-info #practical-info {
-  background-image: url('media/opera_study_europe_training_operasinger.jpg');
+  background-image: url('media/opera_study_europe_training_operasinger-crop.jpg');
 }
 
 /* #summer-info #practical-info::after {
@@ -1131,7 +1131,7 @@ em {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, black, transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, .7), transparent);
   pointer-events: none; 
   z-index: 1;
 }
