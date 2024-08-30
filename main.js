@@ -1,19 +1,19 @@
 // Array of objects, where each object contains the text and the URL of an image
 var slides = [
   {
-    title: "Starting in March 2024",
-    body: "BOA launches a full-time course option for singers wishing to deepen their training in Berlin over a longer time period",
+    title: "Starting in January 2025",
+    body: "BOA introduces an immersive, full-time course option for singers wishing to deepen their training in Berlin over a longer time. Over 4 months, classes include Stagecraft, Singing Lessons, Coachings and daily intensive German language. Click here for more Info!   ",
     imageUrl:
       "media/header-berlin-opera-academy-reviews-what-people-are-saying-about-boa-on-social-media-and-blogs.jpg",
   },
   {
     title: "Opernfest 2025 Program Announced",
-    body: "Berlin Opera Academy will be performing Cendrillon, L'incorinazione di Poppea, Die Fledermaus, and Die Zauberflöte. Apply today!",
+    body: "Berlin Opera Academy's summer festival repertoire //  <br>Cendrillon, L'incorinazione di Poppea, Die Fledermaus, and Die Zauberflöte. Apply today!",
     imageUrl: "media/delphi-summer-opera-theater-stage-experience.jpg",
   },
   {
     title: "Where do BOA Alumni sing today?",
-    body: "Meredith Wohlgemuth (BOA 2017) is singing at such-and-such an amazing place after winning the Metropolitan Opera Competition 2023. Link to her website here: ",
+    body: "We love our alumni! To shine a spotlight: Meredith Wohlgemuth (BOA 2017) is singing at such-and-such an amazing place after winning the Metropolitan Opera Competition 2023. Link to her website here: ",
     imageUrl: "media/meredith-wohlgemuth-soprano-alumni-copyright.jpg",
   },
   // Add more slides as needed
