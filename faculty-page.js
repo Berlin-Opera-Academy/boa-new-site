@@ -37,8 +37,6 @@ loadFacultyData().then((data) => {
   }
 });
 
-window.faculty = faculty;
-
 let currentIndex = 0;
 
 for (const entry of faculty) {
@@ -60,7 +58,9 @@ function updateContent(index) {
 
   document.getElementById("faculty-name").textContent = faculty[index].name;
   appendDescriptionP(faculty[index].description);
-  document.getElementById("faculty-links").innerHTML = faculty[index].links;
+  document.getElementById("faculty-links").innerHTML = returnLinksHTML(
+    faculty[index].links
+  );
   document.querySelector("#faculty-image img").src = faculty[index].imagePath;
   window.location.hash = faculty[index].hash; // Update the URL hash
 }
@@ -89,6 +89,16 @@ function appendDescriptionP(descriptions) {
   }
 }
 
+function returnLinksHTML(links) {
+  let innerHTML = "";
+  for (let i = 0; i < links.length; i++) {
+    innerHTML += links[i];
+    if (i === links.length) break;
+    else innerHTML += "<br>";
+  }
+  return innerHTML;
+}
+
 function appendLinks(links) {
   const linksDiv = document.getElementById("faculty-description");
 
@@ -108,7 +118,9 @@ function loadRoleFromHash() {
   console.log(hash);
 
   for (let i = 0; i < faculty.length; i++) {
-    if (hash === faculty[i].hash) updateContent(currentIndex);
-    currentIndex++;
+    if (hash === faculty[i].hash) {
+      updateContent(currentIndex);
+      break;
+    } else currentIndex++;
   }
 }

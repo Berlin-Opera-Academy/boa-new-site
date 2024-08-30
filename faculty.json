@@ -66,7 +66,8 @@
     {
       "name": "Carlos Spierer",
       "description": [
-        "German conductor Carlos Spierer grew up in Berlin and started to play the violin and piano at the age of six. He studied violin in USA and later conducting with Klauspeter Seibel at the Hochschule für Musik in Hamburg. In 1987 he was awarded 1st prize in the conducting competition of the Schleswig- Holstein Music Festival with Leonard Bernstein. After joining the music staff as Kapellmeister and musical assistant to the Music Director of the Opera House in Kiel, Germany, he became Artistic Director and Music Director of the Gävle Symphony Orchestra in Sweden, followed by the position of Artistic Director and Chief Conductor of the Orquesta Sinfónica de Minería in Mexico City as well as Music Director of the Giessen Opera in Germany.",
+        "German conductor Carlos Spierer grew up in Berlin and started to play the violin and piano at the age of six. He studied violin in USA and later conducting with Klauspeter Seibel at the Hochschule für Musik in Hamburg. In 1987 he was awarded 1st prize in the conducting competition of the Schleswig- Holstein Music Festival with Leonard Bernstein.", 
+        "After joining the music staff as Kapellmeister and musical assistant to the Music Director of the Opera House in Kiel, Germany, he became Artistic Director and Music Director of the Gävle Symphony Orchestra in Sweden, followed by the position of Artistic Director and Chief Conductor of the Orquesta Sinfónica de Minería in Mexico City as well as Music Director of the Giessen Opera in Germany.",
         "His guest engagements have included renowned opera houses and orchestras such as San Francisco Opera, Gothenburg Opera, Frankfurt Opera,Komische Oper Berlin, Badisches Staatstheater Karlsruhe, the National Opera and Estonian National Orchestra in Tallinn, Frankfurt Radio Orchestra, NHK Tokyo, Warsaw Filharmonic Orchestra, Polish National Symphony Orchestra, Deutsche Kammerphilharmonie Bremen, the Philharmonic Orchestra Buenos Aires, NRK Radio Orchestra Oslo and the Royal Philharmonic Orchestra Stockholm.",
         "Carlos Spierer is a reknowned conducting teacher. Besides his private students, he holds master classes at the Texas Music Festival in Houston, at the University of Houston and he teaches regularly at the UNAM in Mexico City. Carlos Spierer’s recording of works by the Swedish composer Oscar Byström (Sterling) has been \"CD of the year 1998\" at the renowned BBC music magazine. The CD of Paddington's First Concert and Poulenc's Babar the Elephant (Polygram) has been awarded the \"Echo Prize 1999\"."
       ],
@@ -208,7 +209,7 @@
         ""
       ],
       "imagePath": "media/andrea_danae_kingston.jpg",
-      "hash": "#andrea-danae-kingston"
+      "hash": "#andrea-kingston"
     },
     {
       "name": "Dominic Barberi",
@@ -275,7 +276,8 @@
     {
       "name": "Teresa Reiber - Director",
       "description": [
-        "Teresa Reiber arbeitet als freie Regisseurin und Spielleiterin. Sie hat unter anderem Elisabeth Stöppler, Vera Nemirova, Dietrich W. Hilsdorf, David Hermann und Sven Holm in Berlin, Salzburg, Wiesbaden und Oldenburg assistiert. Eigene Regiearbeiten umfassen BÜCHNERS FRAUEN (UA) von Paul Leonard Schäffer und die Barockoper LA CALISTO von Francesco Cavalli (beide Hessisches Staatstheater Wiesbaden) sowie 2015 Konzeption und Regie für MODERN TIMES, den Saisonabschluss der Philharmonie Essen. 2016 übernahm Teresa Reiber, zuerst zusammen mit William Robertson, die Leitung des neugegründeten Kinderopernclubs an der Deutschen Oper Berlin und erarbeitete mit 8 bis 12-Jährigen eine szenische Fassung der BERLINER STADTMUSIKANTEN. Bis 2018 folgten die Projekte DONKY SHOT und ZWISCHENWELTEN. Im Juni 2017 inszenierte Teresa Reiber die Monooper DAS TAGEBUCH DER ANNE FRANK von Grigori Frid im Atelierfrankfurt (Auftaktveranstaltung zum ersten Anne-Frank-Tag der Stadt Frankfurt am Main), im März 2019 PIERROT LUNAIRE in der Tischlerei der Deutschen Oper Berlin."
+        "Teresa Reiber arbeitet als freie Regisseurin und Spielleiterin. Sie hat unter anderem Elisabeth Stöppler, Vera Nemirova, Dietrich W. Hilsdorf, David Hermann und Sven Holm in Berlin, Salzburg, Wiesbaden und Oldenburg assistiert.",
+        "Eigene Regiearbeiten umfassen BÜCHNERS FRAUEN (UA) von Paul Leonard Schäffer und die Barockoper LA CALISTO von Francesco Cavalli (beide Hessisches Staatstheater Wiesbaden) sowie 2015 Konzeption und Regie für MODERN TIMES, den Saisonabschluss der Philharmonie Essen.2016 übernahm Teresa Reiber, zuerst zusammen mit William Robertson, die Leitung des neugegründeten Kinderopernclubs an der Deutschen Oper Berlin und erarbeitete mit 8 bis 12-Jährigen eine szenische Fassung der BERLINER STADTMUSIKANTEN. Bis 2018 folgten die Projekte DONKY SHOT und ZWISCHENWELTEN. Im Juni 2017 inszenierte Teresa Reiber die Monooper DAS TAGEBUCH DER ANNE FRANK von Grigori Frid im Atelierfrankfurt (Auftaktveranstaltung zum ersten Anne-Frank-Tag der Stadt Frankfurt am Main), im März 2019 PIERROT LUNAIRE in der Tischlerei der Deutschen Oper Berlin."
       ],
       "links": [
         ""
@@ -358,12 +360,11 @@
         "Katrin holds the office of co-president of the League of Professional Theatre Women and is the first president of the IG Kunst und Kultur in Liechtenstein.",
         "She is a regular contributor to EUROPEAN STAGES, a publication of the Martin E. Segal Center.",
         "Affliliations: Katrin is a full member of SDC, associate member of the Dramatists Guild, member of the Playwright Directors Unit of The Actors Studio and of Theater Resources Unlimited.",
-        "She has an MA in Philosophy, Musicology, English/American Literature from the University of Berne (Switzerland) and speaks English, German, Italian and French.",
-        "More information: Katrinhilbe.com and ManyTracks.org",
-        " "
+        "She has an MA in Philosophy, Musicology, English/American Literature from the University of Berne (Switzerland) and speaks English, German, Italian and French."
       ],
       "links": [
-        ""
+        "<a href='http://www.Katrinhilbe.com'>Katrinhilbe.com</a>",
+        "<a href='http://www.ManyTracks.org'>ManyTracks.org</a>"
       ],
       "imagePath": "media/katrin_hilbe.jpg",
       "hash": "#katrin-hilbe"

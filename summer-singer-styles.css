@@ -588,6 +588,11 @@ em {
   margin-bottom: 0;
 }
 
+#faculty-image img{
+  max-width: 300px;
+  max-height: 300px;
+}
+
 .main-title {
   font-size: 1em;
 }
