@@ -2,7 +2,7 @@
 var slides = [
   {
     title: "Starting in January 2025",
-    body: "BOA introduces an immersive, full-time course option for singers wishing to deepen their training in Berlin over a longer time. <br><br> Over 4 months, classes include Stagecraft, Singing Lessons, Coachings and daily intensive German language. Click here for more Info!",
+    body: "BOA introduces an immersive, full-time course option for singers wishing to deepen their training in Berlin over a longer time. <br><br> Over 4 months, classes include Stagecraft, Singing Lessons, Coachings and daily intensive German language.",
     imageUrl:
       "media/educational-summer-in-berlin-best-opera-program-zauberfloete-stage-wide.jpg",
     link: "singers-full-time.html",
@@ -10,8 +10,8 @@ var slides = [
   },
   {
     title: "Opernfest 2025 Program Announced",
-    body: "Berlin Opera Academy's summer festival repertoire //  <br><br>Cendrillon <br>L'incorinazione di Poppea <br>Die Fledermaus <br>Die Zauberflöte.",
-    imageUrl: "media/delphi-summer-opera-theater-stage-experience.jpg",
+    body: "Berlin Opera Academy's summer festival repertoire //  <br><br>Cendrillon <br>L'incorinazione di Poppea <br>Die Fledermaus <br>Die Zauberflöte",
+    imageUrl: "media/figaro-boa-19august2017-dkurth-dsc00351-2000x1333.jpg",
     link: "singers-summer.html",
     buttonText: "APPLY TODAY",
   },
