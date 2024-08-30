@@ -739,28 +739,24 @@ html {
   font-size: 1.25em;
   padding-left: 50px;
   /* Adjust as needed */
-  padding-top: 50px;
+  padding-top: 0px;
   /* Adjust as needed */
   padding-bottom: 50px;
-  padding-right: 50px;
+  padding-right: 25px;
   margin: 0.625em;
   overflow: auto;
   /* Add a scrollbar if the content is too large */
   max-height: 100%;
-  /* Limit the height */
+  font-size: 1em;
 }
 
 .who-we-are-panel .text-container .apply-button {
   width: auto;
-  /* Let the button size itself based on its content */
-  padding: 20px;
-  /* Adjust as needed */
+  font-size: 1em;
+  padding: 10px 20px;
   margin: 0;
-  /* Remove any margin */
   position: relative;
-  /* Position the button relative to its container */
   transition: transform 0.5s ease-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-  /* adjust as needed */
 }
 
 .panel .apply-button {

@@ -2,19 +2,25 @@
 var slides = [
   {
     title: "Starting in January 2025",
-    body: "BOA introduces an immersive, full-time course option for singers wishing to deepen their training in Berlin over a longer time. Over 4 months, classes include Stagecraft, Singing Lessons, Coachings and daily intensive German language. Click here for more Info!   ",
+    body: "BOA introduces an immersive, full-time course option for singers wishing to deepen their training in Berlin over a longer time. <br><br> Over 4 months, classes include Stagecraft, Singing Lessons, Coachings and daily intensive German language. Click here for more Info!",
     imageUrl:
-      "media/header-berlin-opera-academy-reviews-what-people-are-saying-about-boa-on-social-media-and-blogs.jpg",
+      "media/educational-summer-in-berlin-best-opera-program-zauberfloete-stage-wide.jpg",
+    link: "singers-full-time.html",
+    buttonText: "LEARN MORE",
   },
   {
     title: "Opernfest 2025 Program Announced",
-    body: "Berlin Opera Academy's summer festival repertoire //  <br>Cendrillon, L'incorinazione di Poppea, Die Fledermaus, and Die Zauberflöte. Apply today!",
+    body: "Berlin Opera Academy's summer festival repertoire //  <br><br>Cendrillon <br>L'incorinazione di Poppea <br>Die Fledermaus <br>Die Zauberflöte.",
     imageUrl: "media/delphi-summer-opera-theater-stage-experience.jpg",
+    link: "singers-summer.html",
+    buttonText: "APPLY TODAY",
   },
   {
     title: "Where do BOA Alumni sing today?",
-    body: "We love our alumni! To shine a spotlight: Meredith Wohlgemuth (BOA 2017) is singing at such-and-such an amazing place after winning the Metropolitan Opera Competition 2023. Link to her website here: ",
+    body: "We love our alumni! To shine a spotlight: Meredith Wohlgemuth (BOA 2017) is an American Soprano, 2023 Grand Prize Winnder of the Metropolitan Opera Eric and Dominique Laffont Competition and made her house debut at Staatsoper Hannover, where she is now in the ensemble. Meredith, you rock! Keep an eye on this amazing soprano!",
     imageUrl: "media/meredith-wohlgemuth-soprano-alumni-copyright.jpg",
+    link: "https://www.merwohlgemuth.com/",
+    buttonText: "MEREDITH'S WEBSITE",
   },
   // Add more slides as needed
 ];
@@ -36,6 +42,7 @@ function updateSlide() {
   textContainer.innerHTML = `
   <h2 class="slide-title">${slide.title}</h2>
   <p class="slide-body">${slide.body}</p>
+  <a href="${slide.link}"><button class="apply-button">${slide.buttonText}</button></a>
 `;
 
   setTimeout(function () {
