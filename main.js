@@ -13,7 +13,7 @@ var slides = [
     body: "Berlin Opera Academy's summer festival repertoire //  <br><br>Cendrillon <br>L'incorinazione di Poppea <br>Die Fledermaus <br>Die Zauberflöte",
     imageUrl: "media/figaro-boa-19august2017-dkurth-dsc00351-2000x1333.jpg",
     link: "singers-summer.html",
-    buttonText: "APPLY TODAY",
+    buttonText: "APPLY NOW",
   },
   {
     title: "Where do BOA Alumni sing today?",
