@@ -433,6 +433,10 @@ html {
   font-size: 1.2em;
 }
 
+#academy-description .apply-button-container {
+  padding: 0 0 1rem;
+}
+
 .content {
   text-align: left;
   position: absolute;
