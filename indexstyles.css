@@ -1207,8 +1207,15 @@ fade-in-button {
 }
 
 .info-container a {
-  color: var(--secondary-color);
   text-decoration: none;
+}
+
+a {
+  transition: color .3s ease;
+}
+
+a:hover {
+  color: hotpink;
 }
 
 .social-media-icons {

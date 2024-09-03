@@ -758,6 +758,13 @@ em {
   width: 100%;
 }
 
+a {
+  transition: color .3s ease;
+}
+a:hover {
+  color: hotpink;
+}
+
 #donor-info{
   background-image: url('media/flute-fire-berlin-opera-academy-apprentices-develop-your-career-in-opera-production-and-management-at-boa.JPG');
   background-size: cover;
@@ -1734,7 +1741,6 @@ fade-in-button {
 }
 
 .info-container a{
-  color: var(--secondary-color);
   text-decoration: none;
 }
 
