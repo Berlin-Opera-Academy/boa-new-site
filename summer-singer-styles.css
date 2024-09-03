@@ -694,10 +694,6 @@ em {
   margin: 0;
 }
 
-#tuition-scholarship p {
-  font-size: .8em;
-}
-
 #tuition-scholarship {
   background-image: url('media/BOA-Opernfest2024_Zauberflöte3-5Aug24_(c)Opernfotografie-DetlefKurth_DSC00040-crop.jpg');
     background-size: cover;
@@ -1160,33 +1156,8 @@ a:hover {
   font-size: 1.2em;
 }
 
-.info-cards .info-text {
-  position: relative;
-  z-index: 3;
-  font-size: .8em;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.info-cards .info-text h1 {
-  margin-bottom: 0;
-}
-
-.info-cards .info-text p {
-  margin: 0 10px 10px 10px;
-  font-family: "HK Grotesk-ExtraLight";
-}
-
 #full-time-info-cards .info-grid {
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-#full-time-info-cards .info-content {
-  min-height: 350px;
 }
 
 @media screen and (max-width: 600px) {
