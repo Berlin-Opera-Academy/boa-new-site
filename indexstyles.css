@@ -160,6 +160,7 @@ em {
   transition: transform 0.3s ease-in-out;
   z-index: 9;
   width: auto;
+  font-size: 1.5em;
 }
 
 .nav-menu a {
@@ -171,12 +172,10 @@ em {
   color: var(--secondary-color);
   text-decoration: none;
   transition: color 0.3s linear;
-
+  
   /* Add your new styles here */
-  font-family: 'HK Grotesk-ExtraLight', sans-serif;
-  /* Replace 'Your Font' with the name of your font */
-  line-height: 1.5;
-  /* Adjust as needed */
+  font-family: 'HK Grotesk-ExtraLight', sans-serif; /* Replace 'Your Font' with the name of your font */
+  line-height: 1.5; /* Adjust as needed */
 }
 
 .nav-menu.active {
@@ -185,8 +184,7 @@ em {
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-    margin-right: 10px !important;
-    /* Adjust as needed */
+    margin-right: 10px !important; /* Adjust as needed */
   }
 }
 
@@ -700,8 +698,6 @@ html {
   width: 100%;
   /* This makes each image take up the full width of the grid cell */
   transition: opacity 0.3s ease;
-  /* This makes the opacity change smoothly */
-  box-shadow: 0px 11px 10px black;
 }
 
 /* New media query for smaller screens */

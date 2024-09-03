@@ -1512,7 +1512,6 @@ fade-in-button {
 
 /* This styles the links in the Join Us section. */
 .join-us-panel a {
-  color: var(--secondary-color); /* Sets the link color to the secondary color defined elsewhere in your CSS. */
   text-decoration: none; /* Removes the underline from the links. */
 }
 
@@ -1553,7 +1552,6 @@ fade-in-button {
 
 /* This styles the links in the Join Us section. */
 .join-us-panel a {
-  color: var(--secondary-color); /* Sets the link color to the secondary color defined elsewhere in your CSS. */
   text-decoration: none; /* Removes the underline from the links. */
 }
 
@@ -1755,7 +1753,6 @@ fade-in-button {
 }
 
 .info-container a{
-  color: var(--secondary-color);
   text-decoration: none;
 }
 
