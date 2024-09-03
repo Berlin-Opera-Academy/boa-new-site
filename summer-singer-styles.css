@@ -894,7 +894,7 @@ a:hover {
     margin: 0;
     padding: 0;
   }
-
+  
   #align-left {
     max-width: 100%;
   }
@@ -1075,7 +1075,7 @@ a:hover {
 
 .info-cards .info-grid {
   display: grid;
-  column-gap: 20px;
+  column-gap: 25px;
   width: 100%;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -1086,6 +1086,14 @@ a:hover {
   max-width: 500px;
   grid-template-rows: 6fr 1fr;
   width: 100%;
+}
+
+.info-cards .info-wrapper:nth-of-type(1) {
+  justify-self: end;
+}
+
+.info-cards .info-wrapper:nth-of-type(2) {
+  justify-self: start;
 }
 
 .info-cards .info-footer {
@@ -1132,7 +1140,7 @@ a:hover {
   margin: 1.2rem 0;
   text-align: left;
   list-style-type: square;
-  font-size: .8em;
+  font-size: .9em;
 }
 
 .info-cards .info-content::after {
