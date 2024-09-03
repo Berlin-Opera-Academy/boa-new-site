@@ -563,6 +563,10 @@ em {
 
 #apprentice-role-info img, #apprentice-roles img {
   filter: grayscale(100%);
+  width: clamp(300px, 500px, 600px);
+  height: 400px;
+  margin: 2rem;
+  object-fit: cover;
 }
 
 #apprentice-responsibilities ul, #apprentice-responsibilities li {
@@ -637,6 +641,8 @@ em {
   max-height: 600px;
   object-fit: contain; /* Scale the image to fit without warping, adding black padding as needed */
 }
+
+#apprentice-roles
 
 #align-left .apply-button-container{
   align-self: center;
