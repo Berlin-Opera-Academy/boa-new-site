@@ -429,6 +429,10 @@ html {
   padding: 0.25em 2em;
 }
 
+#academy-description h1 {
+  font-size: 1.2em;
+}
+
 .content {
   text-align: left;
   position: absolute;
