@@ -1062,7 +1062,7 @@ em {
   width: 100%; /* Add this line */
 }
 
-#summer-info .info-grid {
+.info-cards .info-grid {
   display: grid;
   column-gap: 20px;
   width: 100%;
@@ -1070,38 +1070,38 @@ em {
   justify-items: center;
 }
 
-#summer-info .info-wrapper {
+.info-cards .info-wrapper {
   display: grid;
   max-width: 500px;
   grid-template-rows: 6fr 1fr;
   width: 100%;
 }
 
-#summer-info .info-footer {
+.info-cards .info-footer {
   background-color: white;
 }
 
-#summer-info #performance-info {
+.info-cards #performance-info {
   background-image: url('media/BOA-Opernfest2024_Le-nozze-di-Figaro1-9Aug24_(c)Opernfotografie-DetlefKurth_DSC00065-crop.jpg');
 }
 
-#summer-info #practical-info {
+.info-cards #practical-info {
   background-image: url('media/opera_study_europe_training_operasinger-crop.jpg');
 }
 
-/* #summer-info #practical-info::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, black, transparent);
-  pointer-events: none; 
-  z-index: 1;
-} */
+.info-cards #audition-career-info {
+  background-image: url('media/carmen-berlin-opera-academy-application-how-to-apply-and-what-to-expect-from-boa.jpeg');
+}
 
-#summer-info .info-content {
+.info-cards #stage-training-info {
+  background-image: url('media/portait-singer-dark-summer-performance-opera-singer.jpg');
+}
+
+.info-cards #language-immersion-info {
+  background-image: url('media/fleder2.JPG');
+}
+
+.info-cards .info-content {
   background-size: cover;
   background-position: center;
   height: 100%; /* Adjust height as needed */
@@ -1110,13 +1110,13 @@ em {
   color: white; /* Text color */
 }
 
-#summer-info .info-content ul{
+.info-cards .info-content ul{
   position: relative;
   z-index: 3;
   margin: 2rem 0 4rem 0;
 }
 
-#summer-info .info-content li {
+.info-cards .info-content li {
   font-family: 'HK Grotesk-ExtraLight', sans-serif;
   margin: 1.2rem 0;
   text-align: left;
@@ -1124,7 +1124,7 @@ em {
   font-size: .8em;
 }
 
-#summer-info .info-content::after {
+.info-cards .info-content::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1136,26 +1136,30 @@ em {
   z-index: 1;
 }
 
-#summer-info .info-footer {
+.info-cards .info-footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-#summer-info .info-footer h1 {
+.info-cards .info-footer h1 {
   margin: 0 0 0 1rem;
   color: black;
   font-family: "HK Bold";
   font-size: 1.2em;
 }
 
+#full-time-info-cards .info-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 @media screen and (max-width: 600px) {
-  #summer-info .info-grid {
-    grid-template-columns: 1fr;
+  .info-cards .info-grid {
+    grid-template-columns: 1fr !important;
     row-gap: 20px;
   }
 
-  #summer-info .info-footer h1 {
+  .info-cards .info-footer h1 {
     font-size: .8em;
   }
 }
