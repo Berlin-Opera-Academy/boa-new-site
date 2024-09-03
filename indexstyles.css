@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
   color: var(--secondary-color);
   font-family: 'HK Grotesk', sans-serif;
+  background-color: black;
   /* Change font to HK Grotesk */
 }
 
@@ -743,12 +744,12 @@ html {
   overflow: auto;
   /* Add a scrollbar if the content is too large */
   max-height: 100%;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .who-we-are-panel .text-container .apply-button {
   width: auto;
-  font-size: 1em;
+  font-size: 1.1em;
   padding: 10px 20px;
   margin: 0;
   position: relative;
