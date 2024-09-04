@@ -786,7 +786,7 @@ html {
 
 @media screen and (max-width: 600px) {
   .who-we-are-panel .text-container {
-    text-align: center;
+    text-align: left;
     flex: 0 0 100%;
     padding-left: 1em;
     padding-top: 1em;
