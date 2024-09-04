@@ -255,6 +255,18 @@ body {
   margin-bottom: 0.625em;
 }
 
+#orchestra-header::after, #apprentice-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent);
+  pointer-events: none; 
+  z-index: 1;
+}
+
 #header-video {
   position: absolute;
   top: 50%;
@@ -642,8 +654,6 @@ em {
   object-fit: contain; /* Scale the image to fit without warping, adding black padding as needed */
 }
 
-#apprentice-roles
-
 #align-left .apply-button-container{
   align-self: center;
 }
@@ -663,8 +673,13 @@ em {
 #apply-info .panel-content{
   margin: 1rem 0 0 0;
 }
+
+#apply-info .apply-info-steps-container {
+  text-align: left;
+}
+
 #faq-selection .panel-content {
-  width: 100vw;
+  width: 80vw;
 }
 
 .faq p {
@@ -1036,6 +1051,11 @@ a:hover {
     order: 2;
     margin-top: 2em;
   } 
+
+  #apprentice-roles li {
+    font-size: 1.2em;
+    text-decoration: underline;
+  }
 }
 
 .apply-button {
@@ -1112,6 +1132,7 @@ a:hover {
 
 .info-cards #practical-info {
   background-image: url('media/opera_study_europe_training_operasinger-crop.jpg');
+  background-position: right;
 }
 
 .info-cards #audition-career-info {
