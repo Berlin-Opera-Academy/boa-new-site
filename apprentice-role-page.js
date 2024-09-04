@@ -15,7 +15,7 @@ const roles = [
     ],
     additional:
       "Successful applicants will be assigned to two productions during the BOA Opernfest Festival. It is also possible to participate in only one production.",
-    imagePath: "media/apprentice-repetiteur-ariadne-detlef-kurth.jpg",
+    imagePath: "media/apprentice_repetiteur_coach_opera_pianist.jpg",
     hash: "#rep",
   },
   {
