@@ -267,6 +267,10 @@ body {
   z-index: 1;
 }
 
+#apprentice-header::after {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .3), transparent);
+}
+
 #header-video {
   position: absolute;
   top: 50%;
