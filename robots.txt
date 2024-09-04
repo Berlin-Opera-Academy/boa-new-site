@@ -1,0 +1,5 @@
+Disallow: /de/*
+User-agent: *
+Allow: /
+
+Sitemap: https://www.berlinoperaacademy.com/sitemap.xml
