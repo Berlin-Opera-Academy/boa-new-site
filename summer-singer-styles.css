@@ -1192,6 +1192,10 @@ a:hover {
   z-index: 1;
 }
 
+#performance-info::after, #practical-info::after {
+  background: linear-gradient(to right, rgba(0, 0, 0, .7), transparent);
+}
+
 .info-cards .info-footer {
   display: flex;
   align-items: center;
