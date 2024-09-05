@@ -241,6 +241,11 @@ em {
     /* Text color */
   }
 
+
+  #full-time-info .panel-content{
+    font-size: 1.2em !important;
+  }
+
   #full-time-info #align-left {
     max-width: 100% !important;
     padding: 0;
