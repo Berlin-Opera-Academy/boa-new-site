@@ -670,12 +670,10 @@ em {
   align-self: center;
 }
 
-.infographic {
-  display: flex;
-}
-
-.infographic img {
-  width: 33vw;
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
 }
 
 #apply-info .panel-content, #apply-info h1 {
