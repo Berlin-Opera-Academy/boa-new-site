@@ -464,6 +464,10 @@ body, html {
   #apprentice-title, #orchestra-title {
     font-size: 5rem;
   }
+
+  #full-time-info .panel-content {
+    font-size: 1.2em;
+  }
 }
 
 #apply-form iframe{
