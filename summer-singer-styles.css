@@ -454,11 +454,15 @@ body, html {
   }
 
   .title {
-    font-size: 7rem;
+    font-size: 4rem;
     white-space: normal;
     word-break: break-all;
     margin: 0;
     line-height: 90%;
+  }
+
+  #apprentice-title, #orchestra-title {
+    font-size: 5rem;
   }
 }
 
