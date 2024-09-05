@@ -1727,6 +1727,10 @@ fade-in-button {
   color: #fff;
 }
 
+.info-container p {
+  color: #fff;
+}
+
 @media screen and (max-width: 600px) {
   .info-container {
     width: 100%;
