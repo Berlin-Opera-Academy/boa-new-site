@@ -298,6 +298,10 @@ body {
     padding: 1rem;
   }
 
+  #apprentice-advert p {
+    font-size: .8em;
+  }
+
   #apprentice-advert .panel-image {
     align-self: center;
     justify-content: center;
