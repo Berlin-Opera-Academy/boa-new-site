@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const roles = document.querySelectorAll(".apprentice-role");
-  const image = document.querySelector(".panel-image img");
+  const image = document.querySelector("#apprentice-roles .panel-image img");
 
   roles.forEach((role) => {
     role.addEventListener("mouseover", () => {

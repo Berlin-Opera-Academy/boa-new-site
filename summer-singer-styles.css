@@ -271,6 +271,48 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, .3), transparent);
 }
 
+#apprentice-advert {
+  padding: 0;
+}
+
+#apprentice-advert .panel-content {
+  flex: 1;
+  max-width: none;
+}
+
+#apprentice-advert .panel-image {
+  align-self: flex-start;
+  justify-content: flex-end;
+  flex: 0.5;
+}
+
+#apprentice-advert img {
+  object-fit: cover;
+  min-height: 300px;
+  max-height: 350px;
+  filter: grayscale();
+}
+
+@media screen and (max-width: 600px) {
+  #apprentice-advert {
+    padding: 1rem;
+  }
+
+  #apprentice-advert .panel-image {
+    align-self: center;
+    justify-content: center;
+    padding-top: 2rem;
+    max-height: 100%;
+  }
+  
+  #apprentice-advert img {
+    object-fit: cover;
+    width: 90vw;
+    max-height: 300px;
+
+  }
+}
+
 #header-video {
   position: absolute;
   top: 50%;
